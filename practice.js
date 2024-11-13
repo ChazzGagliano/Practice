@@ -95,3 +95,15 @@
 
 // var item = array[Math.floor(Math.random()*array.length)];
 // console.log(item)
+
+
+// Write a while loop to print the numbers 1 through 10.
+
+function print_one(number) {
+    while (number <= 10) {
+        console.log(number)
+        number += 1
+    }
+}
+
+console.log(print_one(1))
