@@ -99,11 +99,47 @@
 
 // Write a while loop to print the numbers 1 through 10.
 
-function print_one(number) {
-    while (number <= 10) {
-        console.log(number)
-        number += 1
-    }
-}
+// function print_one(number) {
+//     while (number <= 10) {
+//         console.log(number)
+//         number += 1
+//     }
+// }
 
-console.log(print_one(1))
+// console.log(print_one(1))
+
+// Write a while loop that prints the word "hello" 5 times.
+
+// count = 0
+
+// while (count < 5) {
+//     console.log("hello")
+//     count += 1
+// }
+
+// count = 2
+
+// while (count <= 40) {
+//     console.log(count)
+//     count += 2
+// }
+
+
+// Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+// var person = {firstName: "Chazz",lastName: "Gagliano", eMail: "cg@gmail.com"}
+
+// console.log(person.firstName)
+// console.log(person.lastName)
+// console.log(person.eMail)
+
+// Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+// var person = [
+//     {firstName: "tim", lastName: "little"},
+//     {firstName: "mike", lastName: "big"},
+//     {firstName: "fred", lastName: "medium"}
+// ]
+
+// console.log(person[0])
+
