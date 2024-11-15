@@ -143,3 +143,10 @@
 
 // console.log(person[0])
 
+// # Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+
+function number_2(number) {
+    return number * 2
+}
+
+console.log(number_2(2))
