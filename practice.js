@@ -145,8 +145,24 @@
 
 // # Write a function that takes in a number and returns the number times two. Then run the function and print the result.
 
-function number_2(number) {
-    return number * 2
+// function number_2(number) {
+//     return number * 2
+// }
+
+// console.log(number_2(2))
+
+// # 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+
+
+// # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+function string_five(string) {
+    let count = 0
+
+    while (count < 5) {
+        console.log(string)
+        count += 1
+    }
 }
 
-console.log(number_2(2))
+console.log(string_five("hello"))
