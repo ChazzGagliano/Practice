@@ -156,8 +156,16 @@
 
 // # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
-function string_five(string) {
-   return string + " " + string + " " + string + " " + string + " " + string
+// function string_five(string) {
+//    return string + " " + string + " " + string + " " + string + " " + string
+// }
+
+// console.log(string_five("hello"))
+
+// Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+
+function sum(number1, number2, number3) {
+    return (number1 + number2 + number3) / 3
 }
 
-console.log(string_five("hello"))
+console.log(sum(3, 3, 3))
