@@ -157,12 +157,7 @@
 // # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
 function string_five(string) {
-    let count = 0
-
-    while (count < 5) {
-        console.log(string)
-        count += 1
-    }
+   return string + " " + string + " " + string + " " + string + " " + string
 }
 
 console.log(string_five("hello"))
