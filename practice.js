@@ -172,8 +172,31 @@
 
 // Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
 
-function times10plus30(number) {
-    return (number * 10) + 30
+// function times10plus30(number) {
+//     return (number * 10) + 30
+// }
+
+// console.log(times10plus30(4))
+
+let blue = "blue"
+let green = "green"
+let yellow = "yellow"
+array = []
+i = 0
+
+while (i <= 100) {
+    if (i <= 30) {
+        array.push(blue)
+        i += 1
+    }
+    else if (i <= 60) {
+        array.push(green)
+        i += 1
+    } else if (i <= 100) {
+        array.push(yellow)
+        i += 1
+    }
 }
 
-console.log(times10plus30(4))
+var item = array[Math.floor(Math.random()*array.length)];
+console.log(item)
