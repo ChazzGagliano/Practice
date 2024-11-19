@@ -201,17 +201,17 @@
 // var item = array[Math.floor(Math.random()*array.length)];
 // console.log(item)
 
-function shortest_name(array) {
-    let shortest = array[0].name.length
+function max_number(array) {
+    let max_number = 0
     let i = 0
 
     while (i < array.length) {
-        if (array[i].name.length < shortest) {
-            shortest = array[i]
+        if (array[i] > max_number) {
+            max_number = array[i]
         }
         i ++
     }
-    return shortest
+    return max_number
 }
 
-console.log(shortest_name([{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]))
+console.log(max_number([5, 10, 8, 11]))
