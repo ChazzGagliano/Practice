@@ -201,17 +201,17 @@
 // var item = array[Math.floor(Math.random()*array.length)];
 // console.log(item)
 
-function max_number(array) {
-    let max_number = 0
-    let i = 0
+function starts_with(array) {
+        let new_array = []
+        let i = 0
 
-    while (i < array.length) {
-        if (array[i] > max_number) {
-            max_number = array[i]
+        while (i < array.length) {
+            if (array[i].name[0].startsWith("b")) {
+                new_array.push(array[i])
+            }
+            i ++
         }
-        i ++
-    }
-    return max_number
+        return new_array
 }
 
-console.log(max_number([5, 10, 8, 11]))
+console.log(starts_with([{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]))
