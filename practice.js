@@ -201,12 +201,12 @@
 // var item = array[Math.floor(Math.random()*array.length)];
 // console.log(item)
 
-function greater_price(array) {
+function less_than(array) {
     let new_array = []
     let i = 0
  
     while ( i < array.length) {
-        if (array[i].price > 10) {
+        if (array[i].name.length < 6) {
             new_array.push(array[i])
         }
         i ++
@@ -214,4 +214,4 @@ function greater_price(array) {
     return new_array
 }
 
-console.log(greater_price([{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]))
+console.log(less_than([{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]))
