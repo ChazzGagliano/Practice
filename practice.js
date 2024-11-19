@@ -206,7 +206,9 @@ function first_letter(array) {
     let i = 0
  
     while ( i < array.length) {
-        new_array.push(array[i][0])
+        if (array[i].length > 3) {
+            new_array.push(array[i])
+        }
         i ++
     }
     return new_array
