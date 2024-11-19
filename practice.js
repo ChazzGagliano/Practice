@@ -178,25 +178,38 @@
 
 // console.log(times10plus30(4))
 
-let blue = "blue"
-let green = "green"
-let yellow = "yellow"
-array = []
-i = 0
+// let blue = "blue"
+// let green = "green"
+// let yellow = "yellow"
+// array = []
+// i = 0
 
-while (i <= 100) {
-    if (i <= 30) {
-        array.push(blue)
-        i += 1
+// while (i <= 100) {
+//     if (i <= 30) {
+//         array.push(blue)
+//         i += 1
+//     }
+//     else if (i <= 60) {
+//         array.push(green)
+//         i += 1
+//     } else if (i <= 100) {
+//         array.push(yellow)
+//         i += 1
+//     }
+// }
+
+// var item = array[Math.floor(Math.random()*array.length)];
+// console.log(item)
+
+function first_letter(array) {
+    let new_array = []
+    let i = 0
+ 
+    while ( i < array.length) {
+        new_array.push(array[i][0])
+        i ++
     }
-    else if (i <= 60) {
-        array.push(green)
-        i += 1
-    } else if (i <= 100) {
-        array.push(yellow)
-        i += 1
-    }
+    return new_array
 }
 
-var item = array[Math.floor(Math.random()*array.length)];
-console.log(item)
+console.log(first_letter(["a", "man", "a", "plan", "a", "canal", "panama"]))
