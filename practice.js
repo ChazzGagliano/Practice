@@ -201,17 +201,35 @@
 // var item = array[Math.floor(Math.random()*array.length)];
 // console.log(item)
 
-function starts_with(array) {
-        let new_array = []
-        let i = 0
+// function starts_with(array) {
+//         let new_array = []
+//         let i = 0
 
-        while (i < array.length) {
-            if (array[i].name[0].startsWith("b")) {
-                new_array.push(array[i])
-            }
-            i ++
-        }
-        return new_array
+//         while (i < array.length) {
+//             if (array[i].name[0].startsWith("b")) {
+//                 new_array.push(array[i])
+//             }
+//             i ++
+//         }
+//         return new_array
+// }
+
+// console.log(starts_with([{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]))
+
+
+// 1. Convert an array of arrays into a hash.
+
+var pairs = [[1, 3], [8, 9], [2, 16]];
+
+
+var pairsObject = {}
+let i = 0
+
+while (i < pairs.length) {
+    var key = pairs[i][0]
+    var value = pairs[i][1]
+    pairsObject[key] = value
+    i += 1
 }
 
-console.log(starts_with([{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]))
+console.log(pairsObject)
