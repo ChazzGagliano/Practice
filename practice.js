@@ -219,17 +219,29 @@
 
 // 1. Convert an array of arrays into a hash.
 
-var pairs = [[1, 3], [8, 9], [2, 16]];
+// var pairs = [[1, 3], [8, 9], [2, 16]];
 
 
-var pairsObject = {}
+// var pairsObject = {}
+// let i = 0
+
+// while (i < pairs.length) {
+//     var key = pairs[i][0]
+//     var value = pairs[i][1]
+//     pairsObject[key] = value
+//     i += 1
+// }
+
+// console.log(pairsObject)
+
+var items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
 let i = 0
+let pair = {}
 
-while (i < pairs.length) {
-    var key = pairs[i][0]
-    var value = pairs[i][1]
-    pairsObject[key] = value
+while (i < items.length) {
+   pair[items[i].id] = items[i]
     i += 1
 }
 
-console.log(pairsObject)
+console.log(pair)
+
