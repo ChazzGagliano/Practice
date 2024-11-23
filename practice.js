@@ -239,9 +239,8 @@ let i = 0
 let pair = {}
 
 while (i < items.length) {
-   pair[items[i].id] = items[i]
+    pair[items[i].id] = items[i]
     i += 1
 }
 
 console.log(pair)
-
