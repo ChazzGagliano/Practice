@@ -234,13 +234,29 @@
 
 // console.log(pairsObject)
 
-var items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
-let i = 0
-let pair = {}
+// var items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
+// let i = 0
+// let pair = {}
 
-while (i < items.length) {
-    pair[items[i].id] = items[i]
-    i += 1
+// while (i < items.length) {
+//     pair[items[i].id] = items[i]
+//     i += 1
+// }
+
+// console.log(pair)
+
+
+// Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
+
+var word = "bookkeeper";
+var object = {};
+var i = 0;
+while (i < word.length) {
+  var letter = word[i];
+  if (object[letter] === undefined) {
+    object[letter] = 0;
+  }
+  object[letter] += 1;
+  i += 1;
 }
-
-console.log(pair)
+console.log(object);
