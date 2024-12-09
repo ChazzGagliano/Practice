@@ -252,13 +252,31 @@
 
     // Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
         
-        var items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
-        let i = 0
-        let pair = {}
+        // var items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
+        // let i = 0
+        // let pair = {}
         
-        while (i < items.length) {
-            pair[items[i].id] = items[i]
-            i ++
+        // while (i < items.length) {
+        //     pair[items[i].id] = items[i]
+        //     i ++
+        // }
+        
+        // console.log(pair)
+
+        // Use a nested loop to convert an array of number pairs into a single flattened array.
+
+        function single_array(array) {
+            let i = 0 
+            let new_array = []
+            while (i < array.length) {
+                let i2 = 0
+                while (i2 < array[i].length) {
+                    new_array.push(array[i][i2])
+                    i2 ++
+                }
+                i ++ 
+            }
+            return new_array
         }
-        
-        console.log(pair)
+
+        console.log(single_array([[1, 3], [8, 9], [2, 16]]))
