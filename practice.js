@@ -265,18 +265,38 @@
 
         // Use a nested loop to convert an array of number pairs into a single flattened array.
 
-        function single_array(array) {
-            let i = 0 
-            let new_array = []
-            while (i < array.length) {
-                let i2 = 0
-                while (i2 < array[i].length) {
-                    new_array.push(array[i][i2])
-                    i2 ++
-                }
-                i ++ 
-            }
-            return new_array
-        }
+        // function single_array(array) {
+        //     let i = 0 
+        //     let new_array = []
+        //     while (i < array.length) {
+        //         let i2 = 0
+        //         while (i2 < array[i].length) {
+        //             new_array.push(array[i][i2])
+        //             i2 ++
+        //         }
+        //         i ++ 
+        //     }
+        //     return new_array
+        // }
 
-        console.log(single_array([[1, 3], [8, 9], [2, 16]]))
+        // console.log(single_array([[1, 3], [8, 9], [2, 16]]))
+
+//         se a nested loop with two arrays of strings to create a new array of strings with each string combined.
+// //     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+
+
+function single_array (letters1, letters2) {
+    let i = 0
+    let combinedLetters = []
+    while (i < letters1.length) {
+        let i2 = 0
+        while (i2 < letters2.length) {
+            combinedLetters.push(letters1[i] + letters2[i2])
+            i2 ++
+        }
+        i ++
+    }
+    return combinedLetters
+}
+
+console.log(single_array(["a", "b", "c"], ["d", "e", "f", "g"]))
