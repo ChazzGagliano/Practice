@@ -285,18 +285,35 @@
 // //     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
 
 
-function single_array (letters1, letters2) {
-    let i = 0
-    let combinedLetters = []
-    while (i < letters1.length) {
-        let i2 = 0
-        while (i2 < letters2.length) {
-            combinedLetters.push(letters1[i] + letters2[i2])
-            i2 ++
+// function single_array (letters1, letters2) {
+//     let i = 0
+//     let combinedLetters = []
+//     while (i < letters1.length) {
+//         let i2 = 0
+//         while (i2 < letters2.length) {
+//             combinedLetters.push(letters1[i] + letters2[i2])
+//             i2 ++
+//         }
+//         i ++
+//     }
+//     return combinedLetters
+// }
+
+// console.log(single_array(["a", "b", "c"], ["d", "e", "f", "g"]))
+
+
+// Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+
+function combined(array) {
+    new_array = []
+    for (i = 0; i < array.length; i ++) {
+        for (i2 = 0; i2 < array.length; i2 ++) {
+            if (i !== i2) {
+                new_array.push(array[i] + array[i2])
+            }
         }
-        i ++
     }
-    return combinedLetters
+    return new_array
 }
 
-console.log(single_array(["a", "b", "c"], ["d", "e", "f", "g"]))
+console.log(combined(["a", "b", "c", "d"]))
