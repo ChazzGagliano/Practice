@@ -340,14 +340,28 @@
 // console.log(greatest_product([5, -2, 1, -9, -7, 2, 6]))
 
 // 5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
-function sum_array(array) {
-    let sum = 0
-    for (i = 0; i < array.length; i ++) {
-        for (i2 = 0; i2 < array[i].length; i2 ++) {
-            sum += array[i][i2]
-        }
-    }
-    return sum
-}
+// function sum_array(array) {
+//     let sum = 0
+//     for (i = 0; i < array.length; i ++) {
+//         for (i2 = 0; i2 < array[i].length; i2 ++) {
+//             sum += array[i][i2]
+//         }
+//     }
+//     return sum
+// }
 
-console.log(sum_array([[1, 3], [8, 9], [2, 16]]))
+// console.log(sum_array([[1, 3], [8, 9], [2, 16]]))
+
+
+// Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+    function combination(numbers1, numbers2) {
+       let combinedSum = []
+        for (i = 0; i < numbers1.length; i ++) {
+            for (i2 = 0; i2 < numbers2.length; i2 ++) {
+                combinedSum.push(numbers1[i] + numbers2[i2]) 
+            }
+        }
+        return combinedSum
+    }
+    console.log(combination([1, 2], [6, 7, 8]))
+
