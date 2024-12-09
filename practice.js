@@ -320,21 +320,34 @@
 
 
 // Use a nested loop to find the largest product of any two different numbers within a given array.
-function greatest_product(array) {
-    let max = -Infinity
+// function greatest_product(array) {
+//     let max = -Infinity
+//     for (i = 0; i < array.length; i ++) {
+//         let currentNumber = array[i]
+//         for (i2 = 0; i2 < array.length; i2 ++) {
+//             if (i !== i2) {
+//                 let otherNumber = array[i2]
+//                 let product = currentNumber * otherNumber
+//                 if (product > max) {
+//                     max = product
+//                 }
+//             }
+//         }
+//     }
+//     return max
+// }
+
+// console.log(greatest_product([5, -2, 1, -9, -7, 2, 6]))
+
+// 5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
+function sum_array(array) {
+    let sum = 0
     for (i = 0; i < array.length; i ++) {
-        let currentNumber = array[i]
-        for (i2 = 0; i2 < array.length; i2 ++) {
-            if (i !== i2) {
-                let otherNumber = array[i2]
-                let product = currentNumber * otherNumber
-                if (product > max) {
-                    max = product
-                }
-            }
+        for (i2 = 0; i2 < array[i].length; i2 ++) {
+            sum += array[i][i2]
         }
     }
-    return max
+    return sum
 }
 
-console.log(greatest_product([5, -2, 1, -9, -7, 2, 6]))
+console.log(sum_array([[1, 3], [8, 9], [2, 16]]))
