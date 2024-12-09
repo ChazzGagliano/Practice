@@ -354,14 +354,14 @@
 
 
 // Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
-    function combination(numbers1, numbers2) {
-       let combinedSum = []
-        for (i = 0; i < numbers1.length; i ++) {
-            for (i2 = 0; i2 < numbers2.length; i2 ++) {
-                combinedSum.push(numbers1[i] + numbers2[i2]) 
-            }
-        }
-        return combinedSum
-    }
-    console.log(combination([1, 2], [6, 7, 8]))
+    // function combination(numbers1, numbers2) {
+    //    let combinedSum = []
+    //     for (i = 0; i < numbers1.length; i ++) {
+    //         for (i2 = 0; i2 < numbers2.length; i2 ++) {
+    //             combinedSum.push(numbers1[i] + numbers2[i2]) 
+    //         }
+    //     }
+    //     return combinedSum
+    // }
+    // console.log(combination([1, 2], [6, 7, 8]))
 
