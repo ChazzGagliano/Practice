@@ -304,16 +304,37 @@
 
 // Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
 
-function combined(array) {
-    new_array = []
+// function combined(array) {
+//     new_array = []
+//     for (i = 0; i < array.length; i ++) {
+//         for (i2 = 0; i2 < array.length; i2 ++) {
+//             if (i !== i2) {
+//                 new_array.push(array[i] + array[i2])
+//             }
+//         }
+//     }
+//     return new_array
+// }
+
+// console.log(combined(["a", "b", "c", "d"]))
+
+
+// Use a nested loop to find the largest product of any two different numbers within a given array.
+function greatest_product(array) {
+    let max = -Infinity
     for (i = 0; i < array.length; i ++) {
+        let currentNumber = array[i]
         for (i2 = 0; i2 < array.length; i2 ++) {
             if (i !== i2) {
-                new_array.push(array[i] + array[i2])
+                let otherNumber = array[i2]
+                let product = currentNumber * otherNumber
+                if (product > max) {
+                    max = product
+                }
             }
         }
     }
-    return new_array
+    return max
 }
 
-console.log(combined(["a", "b", "c", "d"]))
+console.log(greatest_product([5, -2, 1, -9, -7, 2, 6]))
