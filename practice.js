@@ -366,13 +366,13 @@
     // console.log(combination([1, 2], [6, 7, 8]))
 
 
-    function pair_sum(array1, array2) {
+    function pair_product(array1, array2) {
         sum = [] 
         let i = 0
         while (i < array1.length) {
             let i2 = 0
             while (i2 < array2.length) {
-            sum.push(array1[i] + array2[i2])
+            sum.push(array1[i] * array2[i2])
             i2 ++
             }
             i ++
@@ -380,4 +380,4 @@
         return sum
     }
 
-    console.log(pair_sum([5, 2], [6, 7, 8]))
+    console.log(pair_product([5, 2], [6, 7, 8]))
