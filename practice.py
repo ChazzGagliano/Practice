@@ -1,4 +1,6 @@
-num1 = int(input("Enter a number: "))
-num2 = int(input("Enter another number: "))
-sum = num1 + num2
-print(f"The sum is {sum}")
+pi = 3.141592653589793238462643383279502884197
+print(f"{pi:.2f}")
+num = pi * 10
+print(f"{num:.2f}")
+num2 = pi * 10000
+print(f"{num2:,.2f}")
