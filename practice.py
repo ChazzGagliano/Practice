@@ -1,4 +1,4 @@
-num1 = 3
-num2 = 4
-num3 = num1 + num2
-print(num3)
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+sum = num1 + num2
+print(f"The sum is {sum}")
