@@ -38,20 +38,47 @@
 # else:
 #     print("Error.. Try Again")
 
-#Area of Rectangles
+# #Area of Rectangles
 
-sq1_length = int(input("Enter the first square's length: "))
-sq1_width = int(input("Enter the first square's width: "))
+# sq1_length = int(input("Enter the first square's length: "))
+# sq1_width = int(input("Enter the first square's width: "))
 
-sq2_length = int(input("Enter the second square's length: "))
-sq2_width = int(input("Enter the second square's width: "))
+# sq2_length = int(input("Enter the second square's length: "))
+# sq2_width = int(input("Enter the second square's width: "))
 
-sq1_area = sq1_length * sq1_width
-sq2_area = sq2_length * sq2_width
+# sq1_area = sq1_length * sq1_width
+# sq2_area = sq2_length * sq2_width
 
-if sq1_area > sq2_area:
-    print("The first square has a greater area")
-elif sq2_area > sq1_area:
-    print("The second square has a greater area")
+# if sq1_area > sq2_area:
+#     print("The first square has a greater area")
+# elif sq2_area > sq1_area:
+#     print("The second square has a greater area")
+# else:
+#     print("The areas are the same")
+
+# Roman Numerals
+
+number = int(input("Enter a number: "))
+
+if number == 1:
+    print("I")
+elif number == 2:
+    print("II")
+elif number == 3:
+    print("III")
+elif number == 4:
+    print("IV")
+elif number == 5:
+    print("V")
+elif number == 6:
+    print("VI")
+elif number == 7:
+    print("VII")
+elif number == 8:
+    print("VIII")
+elif number == 9:
+    print("IX")
+elif number == 10:
+    print("X")
 else:
-    print("The areas are the same")
+    print("Error... Try Again(Number 1-10)")
