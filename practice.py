@@ -56,29 +56,41 @@
 # else:
 #     print("The areas are the same")
 
-# Roman Numerals
+# # Roman Numerals
 
-number = int(input("Enter a number: "))
+# number = int(input("Enter a number: "))
 
-if number == 1:
-    print("I")
-elif number == 2:
-    print("II")
-elif number == 3:
-    print("III")
-elif number == 4:
-    print("IV")
-elif number == 5:
-    print("V")
-elif number == 6:
-    print("VI")
-elif number == 7:
-    print("VII")
-elif number == 8:
-    print("VIII")
-elif number == 9:
-    print("IX")
-elif number == 10:
-    print("X")
+# if number == 1:
+#     print("I")
+# elif number == 2:
+#     print("II")
+# elif number == 3:
+#     print("III")
+# elif number == 4:
+#     print("IV")
+# elif number == 5:
+#     print("V")
+# elif number == 6:
+#     print("VI")
+# elif number == 7:
+#     print("VII")
+# elif number == 8:
+#     print("VIII")
+# elif number == 9:
+#     print("IX")
+# elif number == 10:
+#     print("X")
+# else:
+#     print("Error... Try Again(Number 1-10)")
+
+#Age Classifier
+age = int(input("enter your age: "))
+
+if age <= 1:
+    print("infant")
+elif 1 < age < 13:
+    print("child")
+elif 13 <= age < 20:
+    print("teen")
 else:
-    print("Error... Try Again(Number 1-10)")
+    print("adult")
