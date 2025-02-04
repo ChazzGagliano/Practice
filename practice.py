@@ -95,3 +95,15 @@
 # else:
 #     print("adult")
 
+#Mass and Weight
+
+mass = int(input("Enter objects mass: "))
+
+weight = mass * 9.8
+
+if weight > 500:
+    print("Too heavy")
+elif weight < 100:
+    print("Too Light")
+else:
+    print("Just Right")
