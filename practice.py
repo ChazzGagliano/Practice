@@ -18,22 +18,40 @@
 # else: 
 #     print("The date is not magic")
 
+#Day of the Week Problem
+# number = int(input("enter a number: "))
 
-number = int(input("enter a number: "))
+# if number == 1:
+#     print("Monday")
+# elif number == 2:
+#     print("Tuesday")
+# elif number == 3:
+#     print("Wednesday")
+# elif number == 4:
+#     print("Thursday")
+# elif number == 5:
+#     print("Friday")
+# elif number == 6:
+#     print("Saturday")
+# elif number == 7:
+#     print("Sunday")
+# else:
+#     print("Error.. Try Again")
 
-if number == 1:
-    print("Monday")
-elif number == 2:
-    print("Tuesday")
-elif number == 3:
-    print("Wednesday")
-elif number == 4:
-    print("Thursday")
-elif number == 5:
-    print("Friday")
-elif number == 6:
-    print("Saturday")
-elif number == 7:
-    print("Sunday")
+#Area of Rectangles
+
+sq1_length = int(input("Enter the first square's length: "))
+sq1_width = int(input("Enter the first square's width: "))
+
+sq2_length = int(input("Enter the second square's length: "))
+sq2_width = int(input("Enter the second square's width: "))
+
+sq1_area = sq1_length * sq1_width
+sq2_area = sq2_length * sq2_width
+
+if sq1_area > sq2_area:
+    print("The first square has a greater area")
+elif sq2_area > sq1_area:
+    print("The second square has a greater area")
 else:
-    print("Error.. Try Again")
+    print("The areas are the same")
