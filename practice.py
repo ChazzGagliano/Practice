@@ -109,9 +109,9 @@
 #     print("Just Right")
 
 
-#Color Mixer
-color1 = str(input("Pick a color: " ))
-color2 = str(input("Pick another color: " ))
+# Color Mixer
+color1 = input("Pick a color: ")
+color2 = input("Pick another color: ")
 
 if (color1 == "blue" and color2 == "red") or (color1 == "red" and color2 == "blue"):
     print(f"When you mix {color1} and {color2} you get purple")
@@ -119,6 +119,8 @@ elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 
     print(f"When you mix {color1} and {color2} you get orange")
 elif (color1 == "blue" and color2 == "yellow") or (color1 == "yellow" and color2 == "blue"):
     print(f"When you mix {color1} and {color2} you get green")
+elif color1 == color2:
+    print(f"You chose {color1} twice, choose two different primary colors")
 else:
-    print("Error... Try Again.")
+    print("Must enter Primary Colors, Try again.")
 
