@@ -97,13 +97,28 @@
 
 #Mass and Weight
 
-mass = int(input("Enter objects mass: "))
+# mass = int(input("Enter objects mass: "))
 
-weight = mass * 9.8
+# weight = mass * 9.8
 
-if weight > 500:
-    print("Too heavy")
-elif weight < 100:
-    print("Too Light")
+# if weight > 500:
+#     print("Too heavy")
+# elif weight < 100:
+#     print("Too Light")
+# else:
+#     print("Just Right")
+
+
+#Color Mixer
+color1 = str(input("Pick a color: " ))
+color2 = str(input("Pick another color: " ))
+
+if (color1 == "blue" and color2 == "red") or (color1 == "red" and color2 == "blue"):
+    print(f"When you mix {color1} and {color2} you get purple")
+elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 == "red"):
+    print(f"When you mix {color1} and {color2} you get orange")
+elif (color1 == "blue" and color2 == "yellow") or (color1 == "yellow" and color2 == "blue"):
+    print(f"When you mix {color1} and {color2} you get green")
 else:
-    print("Just Right")
+    print("Error... Try Again.")
+
