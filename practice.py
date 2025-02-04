@@ -142,15 +142,45 @@
 #     print("Couldn't register number.. Try again")
 
 #Software Sales
-number_of_packages = int(input("Enter number of packages purchased: "))
+# number_of_packages = int(input("Enter number of packages purchased: "))
 
-if 10 <= number_of_packages <= 19:
-    print("10% Discount")
-elif 20 <= number_of_packages <= 49:
-    print("20% Discount")
-elif 50 <= number_of_packages <= 99:
-    print("30% Discount")
-elif number_of_packages >= 100:
-    print("40% Discount") 
-else: 
-    print("No Discount")
+# if 10 <= number_of_packages <= 19:
+#     print("10% Discount")
+# elif 20 <= number_of_packages <= 49:
+#     print("20% Discount")
+# elif 50 <= number_of_packages <= 99:
+#     print("30% Discount")
+# elif number_of_packages >= 100:
+#     print("40% Discount") 
+# else: 
+#     print("No Discount")
+
+# Roulette Wheel Colors
+number = int(input("Enter a pocker number 0 through 36: "))
+
+if 0 <= number <= 36:
+    if number == 0:
+        print("green")
+    elif 1 <= number <= 10:
+        if number % 2 == 0:
+            print("black")
+        else: 
+            print("red")
+    elif 11 <= number <= 18:
+        if number % 2 == 0:
+            print("red")
+        else: 
+            print("black")
+    elif 19 <= number <= 28:
+        if number % 2 == 0:
+            print("black")
+        else: 
+            print("red")
+    elif 29 <= number <= 36:
+        if number % 2 == 0:
+            print("red")
+        else:
+            print("black")
+else:
+    print("Need a number 0 through 36")
+
