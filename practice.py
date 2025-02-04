@@ -110,17 +110,33 @@
 
 
 # Color Mixer
-color1 = input("Pick a color: ")
-color2 = input("Pick another color: ")
+# color1 = input("Pick a color: ")
+# color2 = input("Pick another color: ")
 
-if (color1 == "blue" and color2 == "red") or (color1 == "red" and color2 == "blue"):
-    print(f"When you mix {color1} and {color2} you get purple")
-elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 == "red"):
-    print(f"When you mix {color1} and {color2} you get orange")
-elif (color1 == "blue" and color2 == "yellow") or (color1 == "yellow" and color2 == "blue"):
-    print(f"When you mix {color1} and {color2} you get green")
-elif color1 == color2:
-    print(f"You chose {color1} twice, choose two different primary colors")
+# if (color1 == "blue" and color2 == "red") or (color1 == "red" and color2 == "blue"):
+#     print(f"When you mix {color1} and {color2} you get purple")
+# elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 == "red"):
+#     print(f"When you mix {color1} and {color2} you get orange")
+# elif (color1 == "blue" and color2 == "yellow") or (color1 == "yellow" and color2 == "blue"):
+#     print(f"When you mix {color1} and {color2} you get green")
+# elif color1 == color2:
+#     print(f"You chose {color1} twice, choose two different primary colors")
+# else:
+#     print("Must enter Primary Colors, Try again.")
+
+#Book Club Points
+
+books = int(input("Enter number of books purchased this month: "))
+
+if books == 0:
+    print("Earned 0 points")
+elif books == 2:
+    print("Earned 5 points")
+elif books == 4:
+    print("Earned 15 points")
+elif books == 6:
+    print("Earned 30 points")
+elif books == 8:
+    print("Earned 60 points")
 else:
-    print("Must enter Primary Colors, Try again.")
-
+    print("Couldn't register number.. Try again")
