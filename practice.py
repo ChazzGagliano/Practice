@@ -84,13 +84,14 @@
 #     print("Error... Try Again(Number 1-10)")
 
 #Age Classifier
-age = int(input("enter your age: "))
+# age = int(input("enter your age: "))
 
-if age <= 1:
-    print("infant")
-elif 1 < age < 13:
-    print("child")
-elif 13 <= age < 20:
-    print("teen")
-else:
-    print("adult")
+# if age <= 1:
+#     print("infant")
+# elif 1 < age < 13:
+#     print("child")
+# elif 13 <= age < 20:
+#     print("teen")
+# else:
+#     print("adult")
+
