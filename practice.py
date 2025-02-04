@@ -156,31 +156,51 @@
 #     print("No Discount")
 
 # Roulette Wheel Colors
-number = int(input("Enter a pocker number 0 through 36: "))
+# number = int(input("Enter a pocker number 0 through 36: "))
 
-if 0 <= number <= 36:
-    if number == 0:
-        print("green")
-    elif 1 <= number <= 10:
-        if number % 2 == 0:
-            print("black")
-        else: 
-            print("red")
-    elif 11 <= number <= 18:
-        if number % 2 == 0:
-            print("red")
-        else: 
-            print("black")
-    elif 19 <= number <= 28:
-        if number % 2 == 0:
-            print("black")
-        else: 
-            print("red")
-    elif 29 <= number <= 36:
-        if number % 2 == 0:
-            print("red")
-        else:
-            print("black")
+# if 0 <= number <= 36:
+#     if number == 0:
+#         print("green")
+#     elif 1 <= number <= 10:
+#         if number % 2 == 0:
+#             print("black")
+#         else: 
+#             print("red")
+#     elif 11 <= number <= 18:
+#         if number % 2 == 0:
+#             print("red")
+#         else: 
+#             print("black")
+#     elif 19 <= number <= 28:
+#         if number % 2 == 0:
+#             print("black")
+#         else: 
+#             print("red")
+#     elif 29 <= number <= 36:
+#         if number % 2 == 0:
+#             print("red")
+#         else:
+#             print("black")
+# else:
+#     print("Need a number 0 through 36")
+
+#Money Counting Game
+number_of_pennies = int(input("Enter number of pennies: "))
+number_of_nickels = int(input("Enter number of nickels: "))
+number_of_dimes = int(input("Enter number of dimes: "))
+number_of_quarters = int(input("Enter number of quarters: "))
+
+pennies = .01 * number_of_pennies
+nickels = .05 * number_of_nickels
+dimes = .10 * number_of_dimes
+quarters = .25 * number_of_quarters
+
+total = pennies + nickels + dimes + quarters
+
+if total == 1.0:
+    print("You won the game")
+elif total > 1.0:
+    print(f"More than a dollar by ${total - 1.0:.2f}")
 else:
-    print("Need a number 0 through 36")
+    print(f"Less than a dollar by ${1.0 - total:.2f}")
 
