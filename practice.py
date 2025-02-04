@@ -7,15 +7,33 @@
 
 #Magic Date Problem
 
-month = int(input("Enter a month(numeric form)"))
-day = int(input("Enter a day(numeric form)"))
-year = int(input("Enter a year(last two digits"))
+# month = int(input("Enter a month(numeric form)"))
+# day = int(input("Enter a day(numeric form)"))
+# year = int(input("Enter a year(last two digits"))
 
-print(f"{month}/{day}/{year}")
+# print(f"{month}/{day}/{year}")
 
-if month * day == year:
-    print("The date is magic")
-else: 
-    print("The date is not magic")
+# if month * day == year:
+#     print("The date is magic")
+# else: 
+#     print("The date is not magic")
 
 
+number = int(input("enter a number: "))
+
+if number == 1:
+    print("Monday")
+elif number == 2:
+    print("Tuesday")
+elif number == 3:
+    print("Wednesday")
+elif number == 4:
+    print("Thursday")
+elif number == 5:
+    print("Friday")
+elif number == 6:
+    print("Saturday")
+elif number == 7:
+    print("Sunday")
+else:
+    print("Error.. Try Again")
