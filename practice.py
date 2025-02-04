@@ -126,17 +126,31 @@
 
 #Book Club Points
 
-books = int(input("Enter number of books purchased this month: "))
+# books = int(input("Enter number of books purchased this month: "))
 
-if books == 0:
-    print("Earned 0 points")
-elif books == 2:
-    print("Earned 5 points")
-elif books == 4:
-    print("Earned 15 points")
-elif books == 6:
-    print("Earned 30 points")
-elif books == 8:
-    print("Earned 60 points")
-else:
-    print("Couldn't register number.. Try again")
+# if books == 0:
+#     print("Earned 0 points")
+# elif books == 2:
+#     print("Earned 5 points")
+# elif books == 4:
+#     print("Earned 15 points")
+# elif books == 6:
+#     print("Earned 30 points")
+# elif books == 8:
+#     print("Earned 60 points")
+# else:
+#     print("Couldn't register number.. Try again")
+
+#Software Sales
+number_of_packages = int(input("Enter number of packages purchased: "))
+
+if 10 <= number_of_packages <= 19:
+    print("10% Discount")
+elif 20 <= number_of_packages <= 49:
+    print("20% Discount")
+elif 50 <= number_of_packages <= 99:
+    print("30% Discount")
+elif number_of_packages >= 100:
+    print("40% Discount") 
+else: 
+    print("No Discount")
