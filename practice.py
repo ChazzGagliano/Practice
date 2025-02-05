@@ -205,50 +205,63 @@
 #     print(f"Less than a dollar by ${1.0 - total:.2f}")
 
 #Color mixer
-color1 = input("Enter the first color: ")
-color2 = input("Enter the second color: ")
+# color1 = input("Enter the first color: ")
+# color2 = input("Enter the second color: ")
 
-if color1 == "red":
-    if color2 == "green":
-        print("The two colors are complementary")
-    elif color2 == "orange" or color2 == "yellow" or color2 == "blue" or color2 == "purple":
-        print("The two colors are not complementary")
-    else:
-         print('You did not enter one of red, orange, yellow, green, blue or purple')
-elif color1 == "green":
-    if color2 == "red":
-        print("The two colors are complementary")
-    elif color2 == "orange" or color2 == "yellow" or color2 == "blue" or color2 == "purple":
-        print("The two colors are not complementary")
-    else:
-         print('You did not enter one of red, orange, yellow, green, blue or purple')
-elif color1 == "yellow":
-    if color2 == "purple":
-        print("The two colors are complementary")
-    elif color2 == "orange" or color2 == "green" or color2 == "red" or color2 == "blue":
-        print("The two colors are not complementary")
-    else:
-         print("You did not enter one of red, orange, yellow, green, blue, or purple")
-elif color1 == "purple":
-    if color2 == "yellow":
-        print("The two colors are complementary")
-    elif color2 == "orange" or color2 == "yellow" or color2 == "red" or color2 == "blue":
-        print("The two colors are not complementary")
-    else:
-         print('You did not enter one of red, orange, yellow, green, blue or purple')
-elif color1 == "blue":
-    if color2 == "orange":
-        print("The two colors are complementary")
-    elif color2 == "purple" or color2 == "green" or color2 == "yellow" or color2 == "red":
-        print("The two colors are not complementary")
-    else:
-         print('You did not enter one of red, orange, yellow, green, blue or purple')
-elif color1 == "orange":
-    if color2 == "blue":
-        print("The two colors are complementary")
-    elif color2 == "yellow" or color2 == "red" or color2 == "green" or color2 == "purple":
-        print("The two colors are not complementary")
-    else:
-        print('You did not enter one of red, orange, yellow, green, blue or purple')
-else: 
-    print('You did not enter one of red, orange, yellow, green, blue or purple')
+# if color1 == "red":
+#     if color2 == "green":
+#         print("The two colors are complementary")
+#     elif color2 == "orange" or color2 == "yellow" or color2 == "blue" or color2 == "purple":
+#         print("The two colors are not complementary")
+#     else:
+#          print('You did not enter one of red, orange, yellow, green, blue or purple')
+# elif color1 == "green":
+#     if color2 == "red":
+#         print("The two colors are complementary")
+#     elif color2 == "orange" or color2 == "yellow" or color2 == "blue" or color2 == "purple":
+#         print("The two colors are not complementary")
+#     else:
+#          print('You did not enter one of red, orange, yellow, green, blue or purple')
+# elif color1 == "yellow":
+#     if color2 == "purple":
+#         print("The two colors are complementary")
+#     elif color2 == "orange" or color2 == "green" or color2 == "red" or color2 == "blue":
+#         print("The two colors are not complementary")
+#     else:
+#          print("You did not enter one of red, orange, yellow, green, blue, or purple")
+# elif color1 == "purple":
+#     if color2 == "yellow":
+#         print("The two colors are complementary")
+#     elif color2 == "orange" or color2 == "yellow" or color2 == "red" or color2 == "blue":
+#         print("The two colors are not complementary")
+#     else:
+#          print('You did not enter one of red, orange, yellow, green, blue or purple')
+# elif color1 == "blue":
+#     if color2 == "orange":
+#         print("The two colors are complementary")
+#     elif color2 == "purple" or color2 == "green" or color2 == "yellow" or color2 == "red":
+#         print("The two colors are not complementary")
+#     else:
+#          print('You did not enter one of red, orange, yellow, green, blue or purple')
+# elif color1 == "orange":
+#     if color2 == "blue":
+#         print("The two colors are complementary")
+#     elif color2 == "yellow" or color2 == "red" or color2 == "green" or color2 == "purple":
+#         print("The two colors are not complementary")
+#     else:
+#         print('You did not enter one of red, orange, yellow, green, blue or purple')
+# else: 
+#     print('You did not enter one of red, orange, yellow, green, blue or purple')
+
+#Leap Year
+
+year = int(input("Enter a year: "))
+
+if year % 400 == 0:
+    print("Leap year")
+elif year % 100 == 0:
+    print("Not a leap year")
+elif year % 4 == 0:
+    print("Leap year")
+else:
+    print("Not a leap year")
