@@ -185,22 +185,70 @@
 #     print("Need a number 0 through 36")
 
 #Money Counting Game
-number_of_pennies = int(input("Enter number of pennies: "))
-number_of_nickels = int(input("Enter number of nickels: "))
-number_of_dimes = int(input("Enter number of dimes: "))
-number_of_quarters = int(input("Enter number of quarters: "))
+# number_of_pennies = int(input("Enter number of pennies: "))
+# number_of_nickels = int(input("Enter number of nickels: "))
+# number_of_dimes = int(input("Enter number of dimes: "))
+# number_of_quarters = int(input("Enter number of quarters: "))
 
-pennies = .01 * number_of_pennies
-nickels = .05 * number_of_nickels
-dimes = .10 * number_of_dimes
-quarters = .25 * number_of_quarters
+# pennies = .01 * number_of_pennies
+# nickels = .05 * number_of_nickels
+# dimes = .10 * number_of_dimes
+# quarters = .25 * number_of_quarters
 
-total = pennies + nickels + dimes + quarters
+# total = pennies + nickels + dimes + quarters
 
-if total == 1.0:
-    print("You won the game")
-elif total > 1.0:
-    print(f"More than a dollar by ${total - 1.0:.2f}")
-else:
-    print(f"Less than a dollar by ${1.0 - total:.2f}")
+# if total == 1.0:
+#     print("You won the game")
+# elif total > 1.0:
+#     print(f"More than a dollar by ${total - 1.0:.2f}")
+# else:
+#     print(f"Less than a dollar by ${1.0 - total:.2f}")
 
+#Color mixer
+color1 = input("Enter the first color: ")
+color2 = input("Enter the second color: ")
+
+if color1 == "red":
+    if color2 == "green":
+        print("The two colors are complementary")
+    elif color2 == "orange" or color2 == "yellow" or color2 == "blue" or color2 == "purple":
+        print("The two colors are not complementary")
+    else:
+         print('You did not enter one of red, orange, yellow, green, blue or purple')
+elif color1 == "green":
+    if color2 == "red":
+        print("The two colors are complementary")
+    elif color2 == "orange" or color2 == "yellow" or color2 == "blue" or color2 == "purple":
+        print("The two colors are not complementary")
+    else:
+         print('You did not enter one of red, orange, yellow, green, blue or purple')
+elif color1 == "yellow":
+    if color2 == "purple":
+        print("The two colors are complementary")
+    elif color2 == "orange" or color2 == "green" or color2 == "red" or color2 == "blue":
+        print("The two colors are not complementary")
+    else:
+         print("You did not enter one of red, orange, yellow, green, blue, or purple")
+elif color1 == "purple":
+    if color2 == "yellow":
+        print("The two colors are complementary")
+    elif color2 == "orange" or color2 == "yellow" or color2 == "red" or color2 == "blue":
+        print("The two colors are not complementary")
+    else:
+         print('You did not enter one of red, orange, yellow, green, blue or purple')
+elif color1 == "blue":
+    if color2 == "orange":
+        print("The two colors are complementary")
+    elif color2 == "purple" or color2 == "green" or color2 == "yellow" or color2 == "red":
+        print("The two colors are not complementary")
+    else:
+         print('You did not enter one of red, orange, yellow, green, blue or purple')
+elif color1 == "orange":
+    if color2 == "blue":
+        print("The two colors are complementary")
+    elif color2 == "yellow" or color2 == "red" or color2 == "green" or color2 == "purple":
+        print("The two colors are not complementary")
+    else:
+        print('You did not enter one of red, orange, yellow, green, blue or purple')
+else: 
+    print('You did not enter one of red, orange, yellow, green, blue or purple')
