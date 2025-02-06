@@ -267,34 +267,48 @@
 #     print("Not a leap year")
 
 #Restaurant Selector
-question1 = input("Is anyone in your party a vegetarian? (yes/no) ")
-question2 = input("Is anyone in your party a vegan? (yes/no) ")
-question3 = input("Is anyone in your party gluten-free? (yes/no) ")
+# question1 = input("Is anyone in your party a vegetarian? (yes/no) ")
+# question2 = input("Is anyone in your party a vegan? (yes/no) ")
+# question3 = input("Is anyone in your party gluten-free? (yes/no) ")
 
-if question2 == "yes":
-    print("Corner Cafe")
-    print("Chef’s Kitchen")
-elif question1 == "yes":
-    if question3 == "yes":
-        print("Main Street Pizza Company")
-        print("Corner Cafe")
-        print("Chef’s Kitchen")
-    else:
-        print("Main Street Pizza Company")
-        print("Mama's Fine Italian - Vegetarian")
-        print("Corner Cafe")
-        print("Chef’s Kitchen")
+# if question2 == "yes":
+#     print("Corner Cafe")
+#     print("Chef’s Kitchen")
+# elif question1 == "yes":
+#     if question3 == "yes":
+#         print("Main Street Pizza Company")
+#         print("Corner Cafe")
+#         print("Chef’s Kitchen")
+#     else:
+#         print("Main Street Pizza Company")
+#         print("Mama's Fine Italian - Vegetarian")
+#         print("Corner Cafe")
+#         print("Chef’s Kitchen")
+# else:
+#     if question3 == "yes":
+#         print("Main Street Pizza Company")
+#         print("Corner Cafe")
+#         print("Chef’s Kitchen")
+#     else:
+#         print("Joe’s Gourmet Burgers")
+#         print("Main Street Pizza Company")
+#         print("Mama's Fine Italian - Vegetarian")
+#         print("Corner Cafe")
+#         print("Chef’s Kitchen")
+
+#Shipping Charges
+
+weight = int(input("Enter weight of package(in pounds) for shipping price: "))
+
+if weight <= 2:
+    print("$1.50")
+elif 2 < weight <= 6:
+    print("$3.00")
+elif 6 < weight <= 10:
+    print("$4.00")
 else:
-    if question3 == "yes":
-        print("Main Street Pizza Company")
-        print("Corner Cafe")
-        print("Chef’s Kitchen")
-    else:
-        print("Joe’s Gourmet Burgers")
-        print("Main Street Pizza Company")
-        print("Mama's Fine Italian - Vegetarian")
-        print("Corner Cafe")
-        print("Chef’s Kitchen")
+    print("$4.75")
+
 
     
 
