@@ -255,13 +255,49 @@
 
 #Leap Year
 
-year = int(input("Enter a year: "))
+# year = int(input("Enter a year: "))
 
-if year % 400 == 0:
-    print("Leap year")
-elif year % 100 == 0:
-    print("Not a leap year")
-elif year % 4 == 0:
-    print("Leap year")
+# if year % 400 == 0:
+#     print("Leap year")
+# elif year % 100 == 0:
+#     print("Not a leap year")
+# elif year % 4 == 0:
+#     print("Leap year")
+# else:
+#     print("Not a leap year")
+
+#Restaurant Selector
+question1 = input("Is anyone in your party a vegetarian? (yes/no) ")
+question2 = input("Is anyone in your party a vegan? (yes/no) ")
+question3 = input("Is anyone in your party gluten-free? (yes/no) ")
+
+if question2 == "yes":
+    print("Corner Cafe")
+    print("Chef’s Kitchen")
+elif question1 == "yes":
+    if question3 == "yes":
+        print("Main Street Pizza Company")
+        print("Corner Cafe")
+        print("Chef’s Kitchen")
+    else:
+        print("Main Street Pizza Company")
+        print("Mama's Fine Italian - Vegetarian")
+        print("Corner Cafe")
+        print("Chef’s Kitchen")
 else:
-    print("Not a leap year")
+    if question3 == "yes":
+        print("Main Street Pizza Company")
+        print("Corner Cafe")
+        print("Chef’s Kitchen")
+    else:
+        print("Joe’s Gourmet Burgers")
+        print("Main Street Pizza Company")
+        print("Mama's Fine Italian - Vegetarian")
+        print("Corner Cafe")
+        print("Chef’s Kitchen")
+
+    
+
+
+
+
