@@ -298,16 +298,31 @@
 
 #Shipping Charges
 
-weight = int(input("Enter weight of package(in pounds) for shipping price: "))
+# weight = int(input("Enter weight of package(in pounds) for shipping price: "))
 
-if weight <= 2:
-    print("$1.50")
-elif 2 < weight <= 6:
-    print("$3.00")
-elif 6 < weight <= 10:
-    print("$4.00")
-else:
-    print("$4.75")
+# if weight <= 2:
+#     print("$1.50")
+# elif 2 < weight <= 6:
+#     print("$3.00")
+# elif 6 < weight <= 10:
+#     print("$4.00")
+# else:
+#     print("$4.75")
+
+#CHAPTER $
+
+#Distance Traveled
+mph = int(input("What is the speed of the vehicle in mph? "))
+hour = int(input("How many hours has it traveled? "))
+
+count = 1
+distance_traveled = 0
+print("Hour Distance Traveled")
+while count <= hour:
+    distance_traveled += mph
+    print(f"{count}           {distance_traveled}")
+    count += 1
+
 
 
     
