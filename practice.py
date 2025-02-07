@@ -309,23 +309,32 @@
 # else:
 #     print("$4.75")
 
-#CHAPTER $
+#CHAPTER 4
 
 #Distance Traveled
-mph = int(input("What is the speed of the vehicle in mph? "))
-hour = int(input("How many hours has it traveled? "))
+# mph = int(input("What is the speed of the vehicle in mph? "))
+# hour = int(input("How many hours has it traveled? "))
 
-count = 1
-distance_traveled = 0
-print("Hour Distance Traveled")
-while count <= hour:
-    distance_traveled += mph
-    print(f"{count}           {distance_traveled}")
-    count += 1
+# count = 1
+# distance_traveled = 0
+# print("Hour Distance Traveled")
+# while count <= hour:
+#     distance_traveled += mph
+#     print(f"{count}           {distance_traveled}")
+#     count += 1
 
-
-
+#Population
+starting_number = int(input("Enter number of starting organisms: "))
+population_increase = float(input("Enter daily average population increase(as percentage): "))
+number_of_days = int(input("Enter number of days left to multiply: "))
     
+day_count = 1
+population_increase = 1 + (population_increase / 100)
+print("Day Approximate Population")
+while day_count <= number_of_days:
+    print(f"{day_count}   {starting_number:.4f}")
+    starting_number *= population_increase
+    day_count += 1
 
 
 
