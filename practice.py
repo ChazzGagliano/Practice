@@ -385,12 +385,11 @@
 #         print(f" {i2} ")
 #     print()
 
-#Distance Traveled
-speed = int(input("What is the speed of the vehicle in mph: "))
-hour = int(input("how many hours has it traveled: "))
-time = 1
-print("Hour Distance Traveled")
-for i in range(0, hour):
-    print(f"{time}      {speed}")
-    speed += speed
-    time += 1
+# Distance Traveled
+# speed = int(input("What is the speed of the vehicle in mph: "))
+# hour = int(input("how many hours has it traveled: "))
+# print("Hour Distance Traveled")
+# for i in range(1, hour + 1):
+#     distance = speed * i
+#     print(f"{i}      {distance}")
+
