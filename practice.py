@@ -393,3 +393,14 @@
 #     distance = speed * i
 #     print(f"{i}      {distance}")
 
+#Population
+
+start = int(input("Starting number of organisms: "))
+daily_increase = float(input("Daily increase in percentage: "))
+days = int(input("Number of days: "))
+
+print("Day   Approximate Population")
+calcuation = 1 + (daily_increase / 100)
+for i in range(1, days + 1):
+    print(f"{i}  {start:.2f}")
+    start *= calcuation
