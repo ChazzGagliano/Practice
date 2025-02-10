@@ -324,18 +324,73 @@
 #     count += 1
 
 #Population
-starting_number = int(input("Enter number of starting organisms: "))
-population_increase = float(input("Enter daily average population increase(as percentage): "))
-number_of_days = int(input("Enter number of days left to multiply: "))
+# starting_number = int(input("Enter number of starting organisms: "))
+# population_increase = float(input("Enter daily average population increase(as percentage): "))
+# number_of_days = int(input("Enter number of days left to multiply: "))
     
-day_count = 1
-population_increase = 1 + (population_increase / 100)
-print("Day Approximate Population")
-while day_count <= number_of_days:
-    print(f"{day_count}   {starting_number:.4f}")
-    starting_number *= population_increase
-    day_count += 1
+# day_count = 1
+# population_increase = 1 + (population_increase / 100)
+# print("Day Approximate Population")
+# while day_count <= number_of_days:
+#     print(f"{day_count}   {starting_number:.4f}")
+#     starting_number *= population_increase
+#     day_count += 1
 
 
+# n = int(input("Enter number: "))
+# count = 1 
+
+# while count <= n:
+#     if count % 7 == 0:
+#         print(f'{n} is a multiple of 7')
+#     count += 1
+
+# n = int(input("Enter number: "))  
+# count = 1  
+
+# while count <= n:  
+#     if count % 7 == 0:  # Check if 'count' (not 'n') is a multiple of 7
+#         print(f'{count} is a multiple of 7')  
+#     count += 1  # Always increment count to avoid an infinite loop
+
+# while True:
+#     temp = int(input("Enter the temperature:"))
+#     if 78 <= temp >= 100:
+#         print("Temperature accepted.")
+#         break
+# print("Enter the temperature again.")
+
+# count = 1
+# while True:
+#     number = int(input("Enter a number 1 through 100"))
+#     if 1 <= number <= 100:
+#         while count <= 10:
+#             print(f"{number * count}")
+#             count += 1
+#     break
+    
 
 
+# while True:
+#     number = int(input("Enter a number 1 through 100"))
+#     if 1 <= number <= 100:
+#         for i in range(0, 11):
+#             print(f"{number} x {i} = {number * i}")
+#     break
+
+# number = int(input("Enter a number: "))
+
+# for i in range(1, number + 1):
+#     for i2 in range(1, i + 1):
+#         print(f" {i2} ")
+#     print()
+
+#Distance Traveled
+speed = int(input("What is the speed of the vehicle in mph: "))
+hour = int(input("how many hours has it traveled: "))
+time = 1
+print("Hour Distance Traveled")
+for i in range(0, hour):
+    print(f"{time}      {speed}")
+    speed += speed
+    time += 1
