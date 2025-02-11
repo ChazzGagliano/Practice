@@ -395,12 +395,21 @@
 
 #Population
 
-start = int(input("Starting number of organisms: "))
-daily_increase = float(input("Daily increase in percentage: "))
-days = int(input("Number of days: "))
+# start = int(input("Starting number of organisms: "))
+# daily_increase = float(input("Daily increase in percentage: "))
+# days = int(input("Number of days: "))
 
-print("Day   Approximate Population")
-calcuation = 1 + (daily_increase / 100)
+# print("Day   Approximate Population")
+# calcuation = 1 + (daily_increase / 100)
+# for i in range(1, days + 1):
+#     print(f"{i}  {start:.2f}")
+#     start *= calcuation
+
+#Bug Collector
+days = 5
+total_bugs = 0
+
 for i in range(1, days + 1):
-    print(f"{i}  {start:.2f}")
-    start *= calcuation
+    number = int(input(f"How many bugs did you collect on day {i}?: "))
+    total_bugs += number
+print(f"You collected {total_bugs} bugs in total.")
