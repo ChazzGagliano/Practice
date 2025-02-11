@@ -442,12 +442,29 @@
 
 #Distance Traveled
 
-speed = int(input("What is the speed of the vehicle in mph: "))
-hour = int(input("How many hours did you travel: "))
+# speed = int(input("What is the speed of the vehicle in mph: "))
+# hour = int(input("How many hours did you travel: "))
 
-distance_traveled = 0
-print("Hour   Distance_Traveled")
-for i in range(1, hour + 1):
-    distance_traveled = speed * i
-    print(f"{i}    {distance_traveled}")
+# distance_traveled = 0
+# print("Hour   Distance_Traveled")
+# for i in range(1, hour + 1):
+#     distance_traveled = speed * i
+#     print(f"{i}    {distance_traveled}")
 
+
+years = int(input("How many years: "))
+whole_total = 0
+total_months = 0
+for i in range(1, years + 1):
+    total = 0
+    for i2 in range(1, 13):
+        rain = int(input(f"How much rain in month {i2} of year {i} in inches: "))
+        whole_total += rain
+        total_months += 1
+        total += rain 
+    average = total / 12
+    print(f"{total} inches total rain in year {i}")
+    print(f"{average} is the average in year {i}")
+print(f"{total_months} months entire period")
+print(f"{whole_total} inches entire period")
+print(f"{whole_total / total_months} is the average inches in the entire period")
