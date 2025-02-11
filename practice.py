@@ -415,10 +415,27 @@
 # print(f"You collected {total_bugs} bugs in total.")
 
 #Calories Burned
-calories = 4.2
-total = 0
+# calories = 4.2
+# total = 0
 
-for i in range(1, 31):
-    total += calories 
-    if i % 5 == 0:
-        print(f"{i}: {total:.0f} calories burned.")
+# for i in range(1, 31):
+#     total += calories 
+#     if i % 5 == 0:
+#         print(f"{i}: {total:.0f} calories burned.")
+
+
+#Budget Analysis
+budget = int(input("Enter your budget for the month (Enter 0 to exit): "))
+total_expenses = 0
+
+while True: 
+    expense = int(input("Enter your expense: "))
+    total_expenses += expense
+    if expense == 0:
+        break
+if total_expenses > budget:
+    print(f"You're over budget by ${total_expenses - budget}")
+else:
+    print(f"You stayed under budget by ${budget - total_expenses}")
+
+
