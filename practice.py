@@ -435,7 +435,9 @@ while True:
         break
 if total_expenses > budget:
     print(f"You're over budget by ${total_expenses - budget}")
-else:
+elif budget > total_expenses:
     print(f"You stayed under budget by ${budget - total_expenses}")
+else:
+    print("You broke even")
 
 
