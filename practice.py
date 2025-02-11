@@ -452,19 +452,32 @@
 #     print(f"{i}    {distance_traveled}")
 
 #Average Rainfall
-years = int(input("How many years: "))
-whole_total = 0
-total_months = 0
-for i in range(1, years + 1):
-    total = 0
-    for i2 in range(1, 13):
-        rain = int(input(f"How much rain in month {i2} of year {i} in inches: "))
-        whole_total += rain
-        total_months += 1
-        total += rain 
-    average = total / 12
-    print(f"{total} inches total rain in year {i}")
-    print(f"{average} is the average in year {i}")
-print(f"{total_months} months entire period")
-print(f"{whole_total} inches entire period")
-print(f"{whole_total / total_months} is the average inches in the entire period")
+# years = int(input("How many years: "))
+# whole_total = 0
+# total_months = 0
+# for i in range(1, years + 1):
+#     total = 0
+#     for i2 in range(1, 13):
+#         rain = int(input(f"How much rain in month {i2} of year {i} in inches: "))
+#         whole_total += rain
+#         total_months += 1
+#         total += rain 
+#     average = total / 12
+#     print(f"{total} inches total rain in year {i}")
+#     print(f"{average} is the average in year {i}")
+# print(f"{total_months} months entire period")
+# print(f"{whole_total} inches entire period")
+# print(f"{whole_total / total_months} is the average inches in the entire period")
+
+
+# while True:
+#     number = int(input("Enter a number less than 100(Enter a number greater than 100 to exit): "))
+#     product = number * 10
+#     print(product)
+#     if number > 100:
+#         break
+
+number = 0
+for i in range(0, 1001):
+    if i % 10 == 0:
+        print(i)
