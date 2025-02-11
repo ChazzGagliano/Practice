@@ -451,7 +451,7 @@
 #     distance_traveled = speed * i
 #     print(f"{i}    {distance_traveled}")
 
-
+#Average Rainfall
 years = int(input("How many years: "))
 whole_total = 0
 total_months = 0
