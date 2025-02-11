@@ -469,15 +469,8 @@
 # print(f"{whole_total} inches entire period")
 # print(f"{whole_total / total_months} is the average inches in the entire period")
 
+#Celsius to Farenheit
+for i in range(0, 21):
+    f = (i * 1.8) + 32
+    print(f"C{i} = F{f:.0f} degrees")
 
-# while True:
-#     number = int(input("Enter a number less than 100(Enter a number greater than 100 to exit): "))
-#     product = number * 10
-#     print(product)
-#     if number > 100:
-#         break
-
-number = 0
-for i in range(0, 1001):
-    if i % 10 == 0:
-        print(i)
