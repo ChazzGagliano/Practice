@@ -406,10 +406,19 @@
 #     start *= calcuation
 
 #Bug Collector
-days = 5
-total_bugs = 0
+# days = 5
+# total_bugs = 0
 
-for i in range(1, days + 1):
-    number = int(input(f"How many bugs did you collect on day {i}?: "))
-    total_bugs += number
-print(f"You collected {total_bugs} bugs in total.")
+# for i in range(1, days + 1):
+#     number = int(input(f"How many bugs did you collect on day {i}?: "))
+#     total_bugs += number
+# print(f"You collected {total_bugs} bugs in total.")
+
+#Calories Burned
+calories = 4.2
+total = 0
+
+for i in range(1, 31):
+    total += calories 
+    if i % 5 == 0:
+        print(f"{i}: {total:.0f} calories burned.")
