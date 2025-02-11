@@ -425,19 +425,29 @@
 
 
 #Budget Analysis
-budget = int(input("Enter your budget for the month (Enter 0 to exit): "))
-total_expenses = 0
+# budget = int(input("Enter your budget for the month (Enter 0 to exit): "))
+# total_expenses = 0
 
-while True: 
-    expense = int(input("Enter your expense: "))
-    total_expenses += expense
-    if expense == 0:
-        break
-if total_expenses > budget:
-    print(f"You're over budget by ${total_expenses - budget}")
-elif budget > total_expenses:
-    print(f"You stayed under budget by ${budget - total_expenses}")
-else:
-    print("You broke even")
+# while True: 
+#     expense = int(input("Enter your expense: "))
+#     total_expenses += expense
+#     if expense == 0:
+#         break
+# if total_expenses > budget:
+#     print(f"You're over budget by ${total_expenses - budget}")
+# elif budget > total_expenses:
+#     print(f"You stayed under budget by ${budget - total_expenses}")
+# else:
+#     print("You broke even")
 
+#Distance Traveled
+
+speed = int(input("What is the speed of the vehicle in mph: "))
+hour = int(input("How many hours did you travel: "))
+
+distance_traveled = 0
+print("Hour   Distance_Traveled")
+for i in range(1, hour + 1):
+    distance_traveled = speed * i
+    print(f"{i}    {distance_traveled}")
 
