@@ -393,8 +393,7 @@
 #     distance = speed * i
 #     print(f"{i}      {distance}")
 
-#Population
-
+# Population
 # start = int(input("Starting number of organisms: "))
 # daily_increase = float(input("Daily increase in percentage: "))
 # days = int(input("Number of days: "))
@@ -441,7 +440,6 @@
 #     print("You broke even")
 
 #Distance Traveled
-
 # speed = int(input("What is the speed of the vehicle in mph: "))
 # hour = int(input("How many hours did you travel: "))
 
@@ -470,7 +468,30 @@
 # print(f"{whole_total / total_months} is the average inches in the entire period")
 
 #Celsius to Farenheit
-for i in range(0, 21):
-    f = (i * 1.8) + 32
-    print(f"C{i} = F{f:.0f} degrees")
+# for i in range(0, 21):
+#     f = (i * 1.8) + 32
+#     print(f"C{i} = F{f:.0f} degrees")
 
+# count = 0
+# while True:
+#     number = (input("Enter number: "))
+#     number = str(number)
+#     count += 1
+#     if number == "stop":
+#         print(count)
+#         break
+
+right_value = 70
+attempts = 0
+
+while True:
+    number = int(input("Enter a number: "))
+    attempts += 1
+    
+    if number == right_value:
+        print(f"Correct! It took you {attempts} guesses.")
+        break
+    elif number < right_value:
+        print("Your guess is too low.")
+    else:
+        print("Your guess is too high.")
