@@ -481,17 +481,32 @@
 #         print(count)
 #         break
 
-right_value = 70
-attempts = 0
+# right_value = 70
+# attempts = 0
 
-while True:
-    number = int(input("Enter a number: "))
-    attempts += 1
+# while True:
+#     number = int(input("Enter a number: "))
+#     attempts += 1
     
-    if number == right_value:
-        print(f"Correct! It took you {attempts} guesses.")
-        break
-    elif number < right_value:
-        print("Your guess is too low.")
+#     if number == right_value:
+#         print(f"Correct! It took you {attempts} guesses.")
+#         break
+#     elif number < right_value:
+#         print("Your guess is too low.")
+#     else:
+#         print("Your guess is too high.")
+
+#Maximum of Two Values
+def max():
+    number1 = int(input("Enter a number: "))
+    number2 = int(input("Enter a different number: "))
+    
+    if number1 > number2:
+        print(f"{number1} is greater than {number2}")
+    elif number2 > number1:
+        print(f"{number2} is greater than {number1}")
     else:
-        print("Your guess is too high.")
+        print("Both numbers are equal")
+
+max()
+
