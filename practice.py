@@ -496,17 +496,48 @@
 #     else:
 #         print("Your guess is too high.")
 
-#Maximum of Two Values
-def max():
-    number1 = int(input("Enter a number: "))
-    number2 = int(input("Enter a different number: "))
-    
-    if number1 > number2:
-        print(f"{number1} is greater than {number2}")
-    elif number2 > number1:
-        print(f"{number2} is greater than {number1}")
-    else:
-        print("Both numbers are equal")
+#Paint Job Estimator
 
-max()
+# def paint_job_estimator():
+#     square_feet = int(input("Enter the square feet of walls: " ))
+#     paint_price = float(input("Enter the price paint per gallon: "))
+
+#     quantity = (square_feet + 111) // 112
+#     number_gallons_paint_required = 1
+#     number_gallons_paint_required *= quantity
+#     hours_labor = quantity * 8
+#     total_paint_price = paint_price * number_gallons_paint_required
+#     price_labor = hours_labor * 35
+#     total = price_labor + total_paint_price
+
+#     print(f"The number of gallons of paint required: {number_gallons_paint_required}")
+#     print(f"The hours of labor required: {hours_labor}")
+#     print(f"The cost of paint: ${total_paint_price:.2f}")
+#     print(f"The labor charges: ${price_labor:.2f}")
+#     print(f"The total cost of paint job: ${total:.2f}")
+
+# paint_job_estimator()
+
+
+
+
+
+
+
+
+
+
+#Maximum of Two Values
+# def max():
+#     number1 = int(input("Enter a number: "))
+#     number2 = int(input("Enter a different number: "))
+    
+#     if number1 > number2:
+#         print(f"{number1} is greater than {number2}")
+#     elif number2 > number1:
+#         print(f"{number2} is greater than {number1}")
+#     else:
+#         print("Both numbers are equal")
+
+# max()
 
