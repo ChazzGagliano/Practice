@@ -498,30 +498,29 @@
 
 # Paint Job Estimator
 
-def main():
-    square_feet = int(input("Enter the square feet of walls: " ))
-    paint_price = float(input("Enter the price paint per gallon: "))
-    paint_job_estimator(square_feet, paint_price)
+# def main():
+#     square_feet = int(input("Enter the square feet of walls: " ))
+#     paint_price = float(input("Enter the price paint per gallon: "))
+#     paint_job_estimator(square_feet, paint_price)
 
+# def paint_job_estimator(square_feet, paint_price):
+#     per_square = 112
+#     hours = 8
+#     labor = 35
+#     quantity = (square_feet + 111) // per_square
+#     number_gallons_paint_required = 1
+#     number_gallons_paint_required *= quantity
+#     hours_labor = quantity * hours
+#     total_paint_price = paint_price * number_gallons_paint_required
+#     price_labor = hours_labor * labor
+#     total = price_labor + total_paint_price
+#     print(f"The number of gallons of paint required: {number_gallons_paint_required}")
+#     print(f"The hours of labor required: {hours_labor}")
+#     print(f"The cost of paint: ${total_paint_price:.2f}")
+#     print(f"The labor charges: ${price_labor:.2f}")
+#     print(f"The total cost of paint job: ${total:.2f}")
 
-def paint_job_estimator(square_feet, paint_price):
-    per_square = 112
-    hours = 8
-    labor = 35
-    quantity = (square_feet + 111) // per_square
-    number_gallons_paint_required = 1
-    number_gallons_paint_required *= quantity
-    hours_labor = quantity * hours
-    total_paint_price = paint_price * number_gallons_paint_required
-    price_labor = hours_labor * labor
-    total = price_labor + total_paint_price
-    print(f"The number of gallons of paint required: {number_gallons_paint_required}")
-    print(f"The hours of labor required: {hours_labor}")
-    print(f"The cost of paint: ${total_paint_price:.2f}")
-    print(f"The labor charges: ${price_labor:.2f}")
-    print(f"The total cost of paint job: ${total:.2f}")
-
-main()
+# main()
 
 # Maximum of Two Values
 # def max(number1, number2):
@@ -584,14 +583,33 @@ main()
 # main()
 
 #How Much Insurance
+# def main():
+#     price = float(input("Enter replacement cost: "))
+#     minimum_cost(price)
+
+# def minimum_cost(price):
+#     minimum = .80
+#     total = price * minimum
+#     print(f"The minium amount for the insurance for the property should be ${total:.2f}")
+
+# main()
+
+#Automobile Costs
+
 def main():
-    price = float(input("Enter replacement cost: "))
-    minimum_cost(price)
+    loan = float(input("Enter your monthly loan payment: "))
+    insurance = float(input("Enter your monthly insurance payment: "))
+    gas = float(input("Enter your monthly gas payment: "))
+    oil = float(input("Enter your monthly oil payment: "))
+    tires = float(input("Enter your monthly tires payment: "))
+    maintenance = float(input("Enter your monthly maintenance payment: "))
+    total_expenses(loan, insurance, gas, oil, tires, maintenance)
 
-def minimum_cost(price):
-    minimum = .80
-    total = price * minimum
-    print(f"The minium amount for the insurance for the property should be ${total:.2f}")
-
+def total_expenses(loan, insurance, gas, oil, tires, maintenance):
+    annual = 12
+    monthly_total = loan + insurance + gas + oil + tires + maintenance
+    annual_total = monthly_total * annual
+    print(f"The monthly total is ${monthly_total:.2f} and the annual total is ${annual_total:.2f}.")
+    
 main()
 
