@@ -583,14 +583,15 @@ main()
 #     print(f"The total of the purchase is ${total:.2f}")
 # main()
 
+#How Much Insurance
+def main():
+    price = float(input("Enter replacement cost: "))
+    minimum_cost(price)
 
-# def main():
-#     price = float(input("Enter replacement cost: "))
-#     minimum_cost(price)
+def minimum_cost(price):
+    minimum = .80
+    total = price * minimum
+    print(f"The minium amount for the insurance for the property should be ${total:.2f}")
 
-# def minimum_cost(price):
-#     minimum = .80
-#     total = price * minimum
-#     print(f"The minium amount for the insurance for the property should be ${total:.2f}")
+main()
 
-# main()
