@@ -596,20 +596,38 @@
 
 #Automobile Costs
 
+# def main():
+#     loan = float(input("Enter your monthly loan payment: "))
+#     insurance = float(input("Enter your monthly insurance payment: "))
+#     gas = float(input("Enter your monthly gas payment: "))
+#     oil = float(input("Enter your monthly oil payment: "))
+#     tires = float(input("Enter your monthly tires payment: "))
+#     maintenance = float(input("Enter your monthly maintenance payment: "))
+#     total_expenses(loan, insurance, gas, oil, tires, maintenance)
+
+# def total_expenses(loan, insurance, gas, oil, tires, maintenance):
+#     annual = 12
+#     monthly_total = loan + insurance + gas + oil + tires + maintenance
+#     annual_total = monthly_total * annual
+#     print(f"The monthly total is ${monthly_total:.2f} and the annual total is ${annual_total:.2f}.")
+
+# main()
+
+#Math Quiz
+import random
+
 def main():
-    loan = float(input("Enter your monthly loan payment: "))
-    insurance = float(input("Enter your monthly insurance payment: "))
-    gas = float(input("Enter your monthly gas payment: "))
-    oil = float(input("Enter your monthly oil payment: "))
-    tires = float(input("Enter your monthly tires payment: "))
-    maintenance = float(input("Enter your monthly maintenance payment: "))
-    total_expenses(loan, insurance, gas, oil, tires, maintenance)
+    x = random.randint(1, 1000)
+    y = random.randint(1, 1000)
+    math_problem(x, y)
 
-def total_expenses(loan, insurance, gas, oil, tires, maintenance):
-    annual = 12
-    monthly_total = loan + insurance + gas + oil + tires + maintenance
-    annual_total = monthly_total * annual
-    print(f"The monthly total is ${monthly_total:.2f} and the annual total is ${annual_total:.2f}.")
-    
+def math_problem(x, y):
+    print(f"  {x}")
+    print(f"+ {y}")
+    number = int(input("Enter the sum of the two numbers: "))
+    if number == x + y:
+        print("Correct!")
+    else:
+        print("Incorrect!")
+
 main()
-
