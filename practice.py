@@ -496,14 +496,18 @@
 #     else:
 #         print("Your guess is too high.")
 
-#Paint Job Estimator
+# Paint Job Estimator
+# per_square = 112
+# hours = 8
+# labor = 35
+
 # def paint_job_estimator(square_feet, paint_price):
-#     quantity = (square_feet + 111) // 112
+#     quantity = (square_feet + 111) // per_square
 #     number_gallons_paint_required = 1
 #     number_gallons_paint_required *= quantity
-#     hours_labor = quantity * 8
+#     hours_labor = quantity * hours
 #     total_paint_price = paint_price * number_gallons_paint_required
-#     price_labor = hours_labor * 35
+#     price_labor = hours_labor * labor
 #     total = price_labor + total_paint_price
 
 #     print(f"The number of gallons of paint required: {number_gallons_paint_required}")
@@ -550,13 +554,28 @@
 # print(f"{polygon_area:.2f}")
 
 #Kilometer Converter
-converter = 0.6214
+# converter = 0.6214
+# def main():
+#     kilometers = float(input("Enter a distance in kilometers: "))
+#     kilometer_converter(kilometers)
+
+# def kilometer_converter(km):
+#     miles = km * converter
+#     print(f"{km} kilometers is equivalent to {miles:.2f} miles")
+# main()
+
+county_tax = .03
+state_tax = .05
+
 def main():
-    kilometers = float(input("Enter a distance in kilometers: "))
-    kilometer_converter(kilometers)
+    purchase = float(input("Enter the price of your purchase: "))
+    tax_program(purchase)
 
-def kilometer_converter(km):
-    miles = km * converter
-    print(f"{km} kilometers is equivalent to {miles:.2f} miles")
+def tax_program(purchase):
+    county_sales_tax = purchase * county_tax
+    print(f"The county sales tax is {county_sales_tax:.2f}")
+    state_sales_tax = purchase * state_tax
+    print(f"The state sales tax is {state_sales_tax:.2f}")
+    total = purchase + state_sales_tax + county_sales_tax
+    print(f"The total of the purchase is ${total:.2f}")
 main()
-
