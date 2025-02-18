@@ -497,11 +497,7 @@
 #         print("Your guess is too high.")
 
 #Paint Job Estimator
-
-# def paint_job_estimator():
-#     square_feet = int(input("Enter the square feet of walls: " ))
-#     paint_price = float(input("Enter the price paint per gallon: "))
-
+# def paint_job_estimator(square_feet, paint_price):
 #     quantity = (square_feet + 111) // 112
 #     number_gallons_paint_required = 1
 #     number_gallons_paint_required *= quantity
@@ -516,28 +512,51 @@
 #     print(f"The labor charges: ${price_labor:.2f}")
 #     print(f"The total cost of paint job: ${total:.2f}")
 
-# paint_job_estimator()
+# square_feet = int(input("Enter the square feet of walls: " ))
+# paint_price = float(input("Enter the price paint per gallon: "))
 
+# paint_job_estimator(square_feet, paint_price)
 
-
-
-
-
-
-
-
-
-#Maximum of Two Values
-# def max():
-#     number1 = int(input("Enter a number: "))
-#     number2 = int(input("Enter a different number: "))
+# Maximum of Two Values
+# def max(number1, number2):
     
 #     if number1 > number2:
-#         print(f"{number1} is greater than {number2}")
+#         print(number1)
 #     elif number2 > number1:
-#         print(f"{number2} is greater than {number1}")
+#         print(number2)
 #     else:
 #         print("Both numbers are equal")
 
-# max()
+# number1 = int(input("Enter a number: "))
+# number2 = int(input("Enter a different number: "))
+
+# max(number1, number2)
+
+# import math
+
+# def apothem(side_length, number_of_sides):
+#     return side_length / (2 * math.tan(math.radians(180 / number_of_sides)))
+
+# def area(side_length, number_of_sides):
+#     perimeter = number_of_sides * side_length
+#     apothem_value = apothem(side_length, number_of_sides)
+#     return 0.5 * perimeter * apothem_value
+
+# number_of_sides = int(input("Enter the number of sides: "))
+# side_length = float(input("Enter the side length: "))
+
+# polygon_area = area(side_length, number_of_sides)
+
+# print(f"{polygon_area:.2f}")
+
+#Kilometer Converter
+converter = 0.6214
+def main():
+    kilometers = float(input("Enter a distance in kilometers: "))
+    kilometer_converter(kilometers)
+
+def kilometer_converter(km):
+    miles = km * converter
+    print(f"{km} kilometers is equivalent to {miles:.2f} miles")
+main()
 
