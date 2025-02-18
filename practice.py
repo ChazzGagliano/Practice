@@ -497,29 +497,31 @@
 #         print("Your guess is too high.")
 
 # Paint Job Estimator
-# per_square = 112
-# hours = 8
-# labor = 35
 
-# def paint_job_estimator(square_feet, paint_price):
-#     quantity = (square_feet + 111) // per_square
-#     number_gallons_paint_required = 1
-#     number_gallons_paint_required *= quantity
-#     hours_labor = quantity * hours
-#     total_paint_price = paint_price * number_gallons_paint_required
-#     price_labor = hours_labor * labor
-#     total = price_labor + total_paint_price
+def main():
+    square_feet = int(input("Enter the square feet of walls: " ))
+    paint_price = float(input("Enter the price paint per gallon: "))
+    paint_job_estimator(square_feet, paint_price)
 
-#     print(f"The number of gallons of paint required: {number_gallons_paint_required}")
-#     print(f"The hours of labor required: {hours_labor}")
-#     print(f"The cost of paint: ${total_paint_price:.2f}")
-#     print(f"The labor charges: ${price_labor:.2f}")
-#     print(f"The total cost of paint job: ${total:.2f}")
 
-# square_feet = int(input("Enter the square feet of walls: " ))
-# paint_price = float(input("Enter the price paint per gallon: "))
+def paint_job_estimator(square_feet, paint_price):
+    per_square = 112
+    hours = 8
+    labor = 35
+    quantity = (square_feet + 111) // per_square
+    number_gallons_paint_required = 1
+    number_gallons_paint_required *= quantity
+    hours_labor = quantity * hours
+    total_paint_price = paint_price * number_gallons_paint_required
+    price_labor = hours_labor * labor
+    total = price_labor + total_paint_price
+    print(f"The number of gallons of paint required: {number_gallons_paint_required}")
+    print(f"The hours of labor required: {hours_labor}")
+    print(f"The cost of paint: ${total_paint_price:.2f}")
+    print(f"The labor charges: ${price_labor:.2f}")
+    print(f"The total cost of paint job: ${total:.2f}")
 
-# paint_job_estimator(square_feet, paint_price)
+main()
 
 # Maximum of Two Values
 # def max(number1, number2):
@@ -564,18 +566,31 @@
 #     print(f"{km} kilometers is equivalent to {miles:.2f} miles")
 # main()
 
-county_tax = .03
-state_tax = .05
+#Sales Tax Refactoring
+# county_tax = .03
+# state_tax = .05
 
-def main():
-    purchase = float(input("Enter the price of your purchase: "))
-    tax_program(purchase)
+# def main():
+#     purchase = float(input("Enter the price of your purchase: "))
+#     tax_program(purchase)
 
-def tax_program(purchase):
-    county_sales_tax = purchase * county_tax
-    print(f"The county sales tax is {county_sales_tax:.2f}")
-    state_sales_tax = purchase * state_tax
-    print(f"The state sales tax is {state_sales_tax:.2f}")
-    total = purchase + state_sales_tax + county_sales_tax
-    print(f"The total of the purchase is ${total:.2f}")
-main()
+# def tax_program(purchase):
+#     county_sales_tax = purchase * county_tax
+#     print(f"The county sales tax is {county_sales_tax:.2f}")
+#     state_sales_tax = purchase * state_tax
+#     print(f"The state sales tax is {state_sales_tax:.2f}")
+#     total = purchase + state_sales_tax + county_sales_tax
+#     print(f"The total of the purchase is ${total:.2f}")
+# main()
+
+
+# def main():
+#     price = float(input("Enter replacement cost: "))
+#     minimum_cost(price)
+
+# def minimum_cost(price):
+#     minimum = .80
+#     total = price * minimum
+#     print(f"The minium amount for the insurance for the property should be ${total:.2f}")
+
+# main()
