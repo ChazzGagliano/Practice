@@ -636,15 +636,33 @@
 # main()
 
 #Property Tax
-def main(): 
-    value = float(input("Enter value of property: "))
-    property_tax(value)
+# def main(): 
+#     value = float(input("Enter value of property: "))
+#     property_tax(value)
 
-def property_tax(value):
-    assessment_value = value * .60
-    assessment_unit = 100
-    tax_rate = .72
-    property_tax_due = (assessment_value / assessment_unit) * tax_rate
-    print(f'The tax for the acre assessed at ${assessment_value:.2f} will be ${property_tax_due:.2f}')
+# def property_tax(value):
+#     assessment_value = value * .60
+#     assessment_unit = 100
+#     tax_rate = .72
+#     property_tax_due = (assessment_value / assessment_unit) * tax_rate
+#     print(f'The tax for the acre assessed at ${assessment_value:.2f} will be ${property_tax_due:.2f}')
+
+# main()
+
+#Stadium_Seating
+
+def main():
+    quantity_a = int(input("How many seats were sold in Class A: "))
+    quantity_b = int(input("How many seats were sold in Class B: "))
+    quantity_c = int(input("How many seats were sold in Class C: "))
+    stadium_income(quantity_a, quantity_b, quantity_c)
+
+def stadium_income(quantity_a, quantity_b, quantity_c):
+    price_a = 20
+    price_b = 15
+    price_c = 10
+
+    total_income = (quantity_a * price_a) + (quantity_b * price_b) + (quantity_c * price_c)
+    print(f"Total income for stadium ticket sales: ${total_income:.2f}")
 
 main()
