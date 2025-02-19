@@ -651,18 +651,34 @@
 
 #Stadium_Seating
 
+# def main():
+#     quantity_a = int(input("How many seats were sold in Class A: "))
+#     quantity_b = int(input("How many seats were sold in Class B: "))
+#     quantity_c = int(input("How many seats were sold in Class C: "))
+#     stadium_income(quantity_a, quantity_b, quantity_c)
+
+# def stadium_income(quantity_a, quantity_b, quantity_c):
+#     price_a = 20
+#     price_b = 15
+#     price_c = 10
+
+#     total_income = (quantity_a * price_a) + (quantity_b * price_b) + (quantity_c * price_c)
+#     print(f"Total income for stadium ticket sales: ${total_income:.2f}")
+
+# main()
+
+#Monthly Sales Tax
+
 def main():
-    quantity_a = int(input("How many seats were sold in Class A: "))
-    quantity_b = int(input("How many seats were sold in Class B: "))
-    quantity_c = int(input("How many seats were sold in Class C: "))
-    stadium_income(quantity_a, quantity_b, quantity_c)
+    month_sales = float(input("Enter total sales for the month: "))
+    monthly_sales_tax(month_sales)
 
-def stadium_income(quantity_a, quantity_b, quantity_c):
-    price_a = 20
-    price_b = 15
-    price_c = 10
-
-    total_income = (quantity_a * price_a) + (quantity_b * price_b) + (quantity_c * price_c)
-    print(f"Total income for stadium ticket sales: ${total_income:.2f}")
+def monthly_sales_tax(month_sales):
+    county_sales_tax = .05
+    state_sales_tax = .025
+    total_sales_tax = (month_sales * county_sales_tax) + (month_sales * state_sales_tax)
+    print(f"Amount of county sales tax: ${month_sales * county_sales_tax}")
+    print(f"Amount of state sales tax: ${month_sales * state_sales_tax}")
+    print(f"Total sales tax: ${total_sales_tax}")
 
 main()
