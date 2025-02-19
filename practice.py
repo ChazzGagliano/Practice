@@ -497,9 +497,10 @@
 #         print("Your guess is too high.")
 
 # Paint Job Estimator
+# import math
 
 # def main():
-#     square_feet = int(input("Enter the square feet of walls: " ))
+#     square_feet = int(input("Enter the square feet of wall space: " ))
 #     paint_price = float(input("Enter the price paint per gallon: "))
 #     paint_job_estimator(square_feet, paint_price)
 
@@ -507,7 +508,7 @@
 #     per_square = 112
 #     hours = 8
 #     labor = 35
-#     quantity = (square_feet + 111) // per_square
+#     quantity = math.ceil(square_feet / per_square)
 #     number_gallons_paint_required = 1
 #     number_gallons_paint_required *= quantity
 #     hours_labor = quantity * hours
@@ -523,19 +524,21 @@
 # main()
 
 # Maximum of Two Values
+
+# def main():
+#     number1 = int(input("Enter a number: "))
+#     number2 = int(input("Enter a different number: "))
+#     max(number1, number2)
+
 # def max(number1, number2):
     
 #     if number1 > number2:
-#         print(number1)
+#         print(F"{number1} is greater")
 #     elif number2 > number1:
-#         print(number2)
+#         print(f"{number2} is greater")
 #     else:
 #         print("Both numbers are equal")
-
-# number1 = int(input("Enter a number: "))
-# number2 = int(input("Enter a different number: "))
-
-# max(number1, number2)
+# main()
 
 # import math
 
@@ -614,20 +617,34 @@
 # main()
 
 #Math Quiz
-import random
+# import random
 
-def main():
-    x = random.randint(1, 1000)
-    y = random.randint(1, 1000)
-    math_problem(x, y)
+# def main():
+#     x = random.randint(1, 1000)
+#     y = random.randint(1, 1000)
+#     math_problem(x, y)
 
-def math_problem(x, y):
-    print(f"  {x}")
-    print(f"+ {y}")
-    number = int(input("Enter the sum of the two numbers: "))
-    if number == x + y:
-        print("Correct!")
-    else:
-        print("Incorrect!")
+# def math_problem(x, y):
+#     print(f"  {x}")
+#     print(f"+ {y}")
+#     number = int(input("Enter the sum of the two numbers: "))
+#     if number == x + y:
+#         print("Correct!")
+#     else:
+#         print("Incorrect!")
+
+# main()
+
+#Property Tax
+def main(): 
+    value = float(input("Enter value of property: "))
+    property_tax(value)
+
+def property_tax(value):
+    assessment_value = value * .60
+    assessment_unit = 100
+    tax_rate = .72
+    property_tax_due = (assessment_value / assessment_unit) * tax_rate
+    print(f'The tax for the acre assessed at ${assessment_value:.2f} will be ${property_tax_due:.2f}')
 
 main()
