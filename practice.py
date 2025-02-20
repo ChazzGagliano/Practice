@@ -668,17 +668,29 @@
 # main()
 
 #Monthly Sales Tax
+# def main():
+#     month_sales = float(input("Enter total sales for the month: "))
+#     monthly_sales_tax(month_sales)
 
-def main():
-    month_sales = float(input("Enter total sales for the month: "))
-    monthly_sales_tax(month_sales)
+# def monthly_sales_tax(month_sales):
+#     county_sales_tax = .05
+#     state_sales_tax = .025
+#     total_sales_tax = (month_sales * county_sales_tax) + (month_sales * state_sales_tax)
+#     print(f"Amount of county sales tax: ${month_sales * county_sales_tax}")
+#     print(f"Amount of state sales tax: ${month_sales * state_sales_tax}")
+#     print(f"Total sales tax: ${total_sales_tax}")
 
-def monthly_sales_tax(month_sales):
-    county_sales_tax = .05
-    state_sales_tax = .025
-    total_sales_tax = (month_sales * county_sales_tax) + (month_sales * state_sales_tax)
-    print(f"Amount of county sales tax: ${month_sales * county_sales_tax}")
-    print(f"Amount of state sales tax: ${month_sales * state_sales_tax}")
-    print(f"Total sales tax: ${total_sales_tax}")
+# main()
 
-main()
+# count = 1
+# while count <= 5:
+#     addition = count + count
+#     sub = count - count
+#     product = count * count
+#     quotient = count / count
+#     if count % 2 != 0:
+#         print(f"{count} + {count} = {addition}")
+#         print(f"{count} - {count} = {sub}")
+#         print(f"{count} x {count} = {product}")
+#         print(f"{count} / {count} = {quotient}")
+#     count += 1
