@@ -694,3 +694,15 @@
 #         print(f"{count} x {count} = {product}")
 #         print(f"{count} / {count} = {quotient}")
 #     count += 1
+
+#Feet to Inches
+# def main():
+#     feet = int(input("Enter how many feet: " ))
+#     feet_to_inches(feet)
+
+# def feet_to_inches(feet):
+#     inch_converter = 12
+#     inches = feet * inch_converter
+#     print(f"{feet} ft is equivalent to {inches} inches.")
+
+# main()
