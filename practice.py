@@ -706,3 +706,13 @@
 #     print(f"{feet} ft is equivalent to {inches} inches.")
 
 # main()
+
+def falling_distance(t):
+    g = 9.8
+
+    for t in range(1, 11):
+        d = .5 * g * (t ** 2)
+        print(f"{t} seconds = {d:.2f} meters")
+        t += 1
+
+falling_distance(10)
