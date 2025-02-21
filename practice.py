@@ -837,21 +837,51 @@
 # falling_distance()
 
 #Odd/Even Counter
-import random
+# import random
 
-def determine_number():
-    odd = 0
-    even = 0
-    for i in range(1, 101):
-        number = random.randint(1, 1000)
-        if number % 2 == 0:
-            even += 1
-        else:
-            odd += 1
-    print('Odd count:', odd, 'Even count:', even)
+# def determine_number():
+#     odd = 0
+#     even = 0
+#     for i in range(1, 101):
+#         number = random.randint(1, 1000)
+#         if number % 2 == 0:
+#             even += 1
+#         else:
+#             odd += 1
+#     print('Odd count:', odd, 'Even count:', even)
 
-determine_number()
+# determine_number()
 
+#Test Average and Grade
+import math
+
+test1 = int(input("Enter the first test grade: "))
+test2 = int(input("Enter the second test grade:"))
+test3 = int(input("Enter the third test grade: "))
+test4 = int(input("Enter the fourth test grade: "))
+test5 = int(input("Enter the fifth test grade: "))
+
+def calc_average(test1, test2, test3, test4, test5):
+    sum = test1 + test2 + test3 + test4 + test5
+    average = math.ceil(sum / 5)
+    return average
+
+def determine_grade(test1, test2, test3, test4, test5):
+        for i in test1, test2, test3, test4, test5:
+            if 90 <= i <= 100:
+                print("Grade: A")
+            elif 80 <= i <= 89:
+                print("Grade: B")
+            elif 70 <= i <= 79:
+                print("Grade: C")
+            elif 60 <= i <= 69:
+                print("Grade: D")
+            else:
+                print("Grade: F")
+
+determine_grade(test1, test2, test3, test4, test5)
+result = calc_average(test1, test2, test3, test4, test5)
+print("The class average:", result,"%")
 
 
 
