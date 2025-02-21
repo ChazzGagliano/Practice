@@ -828,13 +828,31 @@
 
 #Falling_Distance
     
-def falling_distance():
-    g = 9.8
-    for t in range(1, 11):
-        d = 0.5 * g * (t ** 2)
-        print(f"{t} seconds = {d:.2f} meters")
+# def falling_distance():
+#     g = 9.8
+#     for t in range(1, 11):
+#         d = 0.5 * g * (t ** 2)
+#         print(f"{t} seconds = {d:.2f} meters")
 
-falling_distance()
+# falling_distance()
+
+#Odd/Even Counter
+import random
+
+def determine_number():
+    odd = 0
+    even = 0
+    for i in range(1, 101):
+        number = random.randint(1, 1000)
+        if number % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    print('Odd count:', odd, 'Even count:', even)
+
+determine_number()
+
+
 
 
 
