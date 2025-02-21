@@ -707,12 +707,74 @@
 
 # main()
 
-def falling_distance(t):
-    g = 9.8
+#Falling Distance
+# def falling_distance(t):
+#     g = 9.8
 
-    for t in range(1, 11):
-        d = .5 * g * (t ** 2)
-        print(f"{t} seconds = {d:.2f} meters")
-        t += 1
+#     for t in range(1, 11):
+#         d = .5 * g * (t ** 2)
+#         print(f"{t} seconds = {d:.2f} meters")
+#         t += 1
 
-falling_distance(10)
+# falling_distance(10)
+# def main():
+#     mass = float(input("Enter the mass in kilograms: "))
+#     velocity = int(input("Enter the speed in meters per second: "))
+#     kinetic_energy(mass, velocity)
+    
+# def kinetic_energy(mass, velocity):
+#     conversion = 0.5 * mass * (velocity ** 2)
+#     print(f"The objects kinetic engergy is: {conversion:.2f}")
+
+# main()
+
+#Odd/Even Numbers
+# import random
+
+# def main():
+#     even = 0
+#     odd = 0
+#     for i in range(1, 101):
+#         number = random.randint(1, 1000)
+#         if number % 2 != 0:
+#             odd += 1
+#         else:
+#             even += 1
+#     print(f"{odd} odd numbers and {even} even numbers.")
+
+# main()
+
+#Test Average and Grade
+import math
+
+def main(): 
+    test1 = int(input("Enter grade for first test: "))
+    test2 = int(input("Enter grade for second test: "))
+    test3 = int(input("Enter grade for third test: "))
+    test4 = int(input("Enter grade for fourth test: "))
+    test5 = int(input("Enter grade for fifth test: "))
+    determine_grade(test1, test2, test3, test4, test5)
+    result = calc_average(test1, test2, test3, test4, test5)       
+    print(f"The class average is {result}")
+
+def calc_average(test1, test2, test3, test4, test5):
+    sum = test1 + test2 + test3 + test4 + test5 
+    average = math.ceil(sum / 5)
+    return average
+
+def determine_grade(test1, test2, test3, test4, test5):
+    for i in test1, test2, test3, test4, test5:
+        if 90 <= i <= 100:
+            print("Grade: A")
+        elif 80 <= i <= 89:
+            print("Grade: B")
+        elif 70 <= i <= 79:
+            print("Grade: C")
+        elif 60 <= i <= 69:
+            print("Grade: D")
+        else:
+            print("Grade: F")
+
+main()
+
+
