@@ -791,18 +791,18 @@
 # main()
 
 #Future Value
-def main():
-    p = float(input("Enter current value: "))
-    i = float(input("Enter monthly interest rate: "))
-    t = int(input("Enter number of months: "))
-    result = future_value(p, i, t)
-    print(f"The future value is ${result:,.2f}")
+# def main():
+#     p = float(input("Enter current value: "))
+#     i = float(input("Enter monthly interest rate: "))
+#     t = int(input("Enter number of months: "))
+#     result = future_value(p, i, t)
+#     print(f"The future value is ${result:,.2f}")
         
-def future_value(p, i, t):
-        f = p * ((1 + i) ** t)
-        return f
+# def future_value(p, i, t):
+#         f = p * ((1 + i) ** t)
+#         return f
 
-main()
+# main()
 
 #Number guesser
 # import random
@@ -824,3 +824,18 @@ main()
 #             print("Too high!, try again!")
 
 # random_number()
+
+
+#Falling_Distance
+    
+def falling_distance():
+    g = 9.8
+    for t in range(1, 11):
+        d = 0.5 * g * (t ** 2)
+        print(f"{t} seconds = {d:.2f} meters")
+
+falling_distance()
+
+
+
+
