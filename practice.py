@@ -778,30 +778,29 @@
 # main()
 
 #Prime Numbers
-
 # def main():
 #     number = int(input("Enter a number to see if its a prime number: "))
 #     result = is_prime(number)
-#     print(number)
+#     print(result)
 
 # def is_prime(number):
-#     if number == 2:
-#         return False
-#     else:
+#     if number == 2 or number % 2 != 0:
 #         return True
+#     else:
+#         return False
 # main()
 
 #Future Value
-
 def main():
     p = float(input("Enter current value: "))
     i = float(input("Enter monthly interest rate: "))
     t = int(input("Enter number of months: "))
-    future_value(p, i, t)
+    result = future_value(p, i, t)
+    print(f"The future value is ${result:,.2f}")
         
 def future_value(p, i, t):
         f = p * ((1 + i) ** t)
-        print(f"Future value: ${f:.2f}")
+        return f
 
 main()
 
