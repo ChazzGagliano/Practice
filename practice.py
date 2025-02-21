@@ -793,39 +793,35 @@
 
 #Future Value
 
-# def main():
-#     p = float(input("Enter present value: "))
-#     i = float(input("Enter monthly interest rate: "))
-#     t = int(input("Enter number of months: "))
-#     future_value(p, i, t)
-#     each_month(p, i, t)
-
-# def each_month(p, i, t):
-#         for months in range(1, t + 1):
-#             f = p * (1 + i) ** months
-#             print(f"month {months}: ${f:.2f}")
+def main():
+    p = float(input("Enter current value: "))
+    i = float(input("Enter monthly interest rate: "))
+    t = int(input("Enter number of months: "))
+    future_value(p, i, t)
         
-# def future_value(p, i, t):
-#         f = p * ((1 + i) ** t)
-#         print(f"Future value: {f:.2f}")
+def future_value(p, i, t):
+        f = p * ((1 + i) ** t)
+        print(f"Future value: ${f:.2f}")
 
-# main()
-import random
+main()
 
-def random_number():
-    correct_number = random.randrange(101)
-    print(correct_number)
-    count = 0
-    while True:
-        number = int(input("Pick a number between 1 and 100: "))
-        count += 1
-        if correct_number == number:
-            print(f"Winner! {count} attempts!")
-            print("picking a new number!")
-            continue
-        elif correct_number > number:
-            print("Too low!, try again")
-        else:
-            print("Too high!, try again!")
+#Number guesser
+# import random
 
-random_number()
+# def random_number():
+#     correct_number = random.randrange(101)
+#     count = 0
+#     while True:
+#         number = int(input("Pick a number between 1 and 100: "))
+#         count += 1
+#         if correct_number == number:
+#             print(f"Winner! {count} attempts!")
+#             print("picking a new number!")
+#             count = 0
+#             continue
+#         elif correct_number > number:
+#             print("Too low!, try again")
+#         else:
+#             print("Too high!, try again!")
+
+# random_number()
