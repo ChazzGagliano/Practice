@@ -745,36 +745,87 @@
 # main()
 
 #Test Average and Grade
-import math
+# import math
 
-def main(): 
-    test1 = int(input("Enter grade for first test: "))
-    test2 = int(input("Enter grade for second test: "))
-    test3 = int(input("Enter grade for third test: "))
-    test4 = int(input("Enter grade for fourth test: "))
-    test5 = int(input("Enter grade for fifth test: "))
-    determine_grade(test1, test2, test3, test4, test5)
-    result = calc_average(test1, test2, test3, test4, test5)       
-    print(f"The class average is {result}")
+# def main(): 
+#     test1 = int(input("Enter grade for first test: "))
+#     test2 = int(input("Enter grade for second test: "))
+#     test3 = int(input("Enter grade for third test: "))
+#     test4 = int(input("Enter grade for fourth test: "))
+#     test5 = int(input("Enter grade for fifth test: "))
+#     determine_grade(test1, test2, test3, test4, test5)
+#     result = calc_average(test1, test2, test3, test4, test5)       
+#     print(f"The class average is {result}")
 
-def calc_average(test1, test2, test3, test4, test5):
-    sum = test1 + test2 + test3 + test4 + test5 
-    average = math.ceil(sum / 5)
-    return average
+# def calc_average(test1, test2, test3, test4, test5):
+#     sum = test1 + test2 + test3 + test4 + test5 
+#     average = math.ceil(sum / 5)
+#     return average
 
-def determine_grade(test1, test2, test3, test4, test5):
-    for i in test1, test2, test3, test4, test5:
-        if 90 <= i <= 100:
-            print("Grade: A")
-        elif 80 <= i <= 89:
-            print("Grade: B")
-        elif 70 <= i <= 79:
-            print("Grade: C")
-        elif 60 <= i <= 69:
-            print("Grade: D")
+# def determine_grade(test1, test2, test3, test4, test5):
+#     for i in test1, test2, test3, test4, test5:
+#         if 90 <= i <= 100:
+#             print("Grade: A")
+#         elif 80 <= i <= 89:
+#             print("Grade: B")
+#         elif 70 <= i <= 79:
+#             print("Grade: C")
+#         elif 60 <= i <= 69:
+#             print("Grade: D")
+#         else:
+#             print("Grade: F")
+
+# main()
+
+#Prime Numbers
+
+# def main():
+#     number = int(input("Enter a number to see if its a prime number: "))
+#     result = is_prime(number)
+#     print(number)
+
+# def is_prime(number):
+#     if number == 2:
+#         return False
+#     else:
+#         return True
+# main()
+
+#Future Value
+
+# def main():
+#     p = float(input("Enter present value: "))
+#     i = float(input("Enter monthly interest rate: "))
+#     t = int(input("Enter number of months: "))
+#     future_value(p, i, t)
+#     each_month(p, i, t)
+
+# def each_month(p, i, t):
+#         for months in range(1, t + 1):
+#             f = p * (1 + i) ** months
+#             print(f"month {months}: ${f:.2f}")
+        
+# def future_value(p, i, t):
+#         f = p * ((1 + i) ** t)
+#         print(f"Future value: {f:.2f}")
+
+# main()
+import random
+
+def random_number():
+    correct_number = random.randrange(101)
+    print(correct_number)
+    count = 0
+    while True:
+        number = int(input("Pick a number between 1 and 100: "))
+        count += 1
+        if correct_number == number:
+            print(f"Winner! {count} attempts!")
+            print("picking a new number!")
+            continue
+        elif correct_number > number:
+            print("Too low!, try again")
         else:
-            print("Grade: F")
+            print("Too high!, try again!")
 
-main()
-
-
+random_number()
