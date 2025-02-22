@@ -853,36 +853,52 @@
 # determine_number()
 
 #Test Average and Grade
-import math
+# import math
 
-test1 = int(input("Enter the first test grade: "))
-test2 = int(input("Enter the second test grade:"))
-test3 = int(input("Enter the third test grade: "))
-test4 = int(input("Enter the fourth test grade: "))
-test5 = int(input("Enter the fifth test grade: "))
+# test1 = int(input("Enter the first test grade: "))
+# test2 = int(input("Enter the second test grade:"))
+# test3 = int(input("Enter the third test grade: "))
+# test4 = int(input("Enter the fourth test grade: "))
+# test5 = int(input("Enter the fifth test grade: "))
 
-def calc_average(test1, test2, test3, test4, test5):
-    sum = test1 + test2 + test3 + test4 + test5
-    average = math.ceil(sum / 5)
-    return average
+# def calc_average(test1, test2, test3, test4, test5):
+#     sum = test1 + test2 + test3 + test4 + test5
+#     average = math.ceil(sum / 5)
+#     return average
+        
+# def determine_grade(test1, test2, test3, test4, test5):
+#         for i in test1, test2, test3, test4, test5:
+#             if 90 <= i <= 100:
+#                 print("Grade: A")
+#             elif 80 <= i <= 89:
+#                 print("Grade: B")
+#             elif 70 <= i <= 79:
+#                 print("Grade: C")
+#             elif 60 <= i <= 69:
+#                 print("Grade: D")
+#             else:
+#                 print("Grade: F")
 
-def determine_grade(test1, test2, test3, test4, test5):
-        for i in test1, test2, test3, test4, test5:
-            if 90 <= i <= 100:
-                print("Grade: A")
-            elif 80 <= i <= 89:
-                print("Grade: B")
-            elif 70 <= i <= 79:
-                print("Grade: C")
-            elif 60 <= i <= 69:
-                print("Grade: D")
-            else:
-                print("Grade: F")
+# determine_grade(test1, test2, test3, test4, test5)
+# result = calc_average(test1, test2, test3, test4, test5)
+# print("The class average:", result,"%")
 
-determine_grade(test1, test2, test3, test4, test5)
-result = calc_average(test1, test2, test3, test4, test5)
-print("The class average:", result,"%")
+#Future Value
+p = float(input('Enter present value: '))
+i = float(input('Enter monthly interest: '))
+t = int(input('Enter number of months: '))
+count = 1
 
+def future_value(p, i, t):
+    f = p * ((1 + i) ** t)
+    return f
+
+for month in range(1, t + 1):
+    f = p * ((1 + i) ** month)
+    print(f"Value: ${f:,.2f} Month: {month}")
+
+final_value = future_value(p, i, t)
+print(f"This is the future value ${final_value:,.2f}")
 
 
 
