@@ -972,35 +972,44 @@
 # math_quiz()
 
 # Test Average and Quiz
-import math
-test1 = int(input("Enter the first test grade: "))
-test2 = int(input("Enter the second test grade: "))
-test3 = int(input("Enter the third test grade: "))
-test4 = int(input("Enter the fourth test grade: "))
-test5 = int(input("Enter the fifth test grade: "))
+# import math
+# test1 = int(input("Enter the first test grade: "))
+# test2 = int(input("Enter the second test grade: "))
+# test3 = int(input("Enter the third test grade: "))
+# test4 = int(input("Enter the fourth test grade: "))
+# test5 = int(input("Enter the fifth test grade: "))
 
-def calc_average(test1, test2, test3, test4, test5):
-    sum = test1 + test2 + test3 + test4 + test5
-    average = math.ceil(sum / 5)
-    return average
+# def calc_average(test1, test2, test3, test4, test5):
+#     sum = test1 + test2 + test3 + test4 + test5
+#     average = math.ceil(sum / 5)
+#     return average
 
-def determine_grade(test1, test2, test3, test4, test5):
-    for i in test1, test2, test3, test4, test5:
-        if 90 <= i <= 100:
-            print("A")
-        elif 80 <= i <= 89:
-            print("B")
-        elif 70 <= i <= 79:
-            print("C")
-        elif 60 <= i <= 69:
-            print("D")
-        else:
-            print("F")
+# def determine_grade(test1, test2, test3, test4, test5):
+#     for i in test1, test2, test3, test4, test5:
+#         print(i)
+#         if 90 <= i <= 100:
+#             print("A")
+#         elif 80 <= i <= 89:
+#             print("B")
+#         elif 70 <= i <= 79:
+#             print("C")
+#         elif 60 <= i <= 69:
+#             print("D")
+#         else:
+#             print("F")
 
 
-result = calc_average(test1, test2, test3, test4, test5)
-print(f"Class average: {result}%")
-determine_grade(test1, test2, test3, test4, test5)
+# result = calc_average(test1, test2, test3, test4, test5)
+# print(f"Class average: {result}%")
+# determine_grade(test1, test2, test3, test4, test5)
+
+def falling_distance(t):
+    g = 9.8
+    d = 0.5 * g * (t ** 2)
+    print(f"{d:.2f} meters in {t} seconds")
+
+for t in range(1, 11):
+    falling_distance(t)
 
 
 
