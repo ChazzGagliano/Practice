@@ -950,9 +950,9 @@
 # math_quiz(x, y)
 import random
 
-x = random.randint(1, 1000)
-y = random.randint(1, 1000)
-def math_quiz(x, y):
+def math_quiz():
+    x = random.randint(1, 1000)
+    y = random.randint(1, 1000)
     count = 0
     while True:
         print("Solve the math problem:")
@@ -969,6 +969,6 @@ def math_quiz(x, y):
         else:
             print("Try again!")
 
-math_quiz(x, y)
+math_quiz()
 
         
