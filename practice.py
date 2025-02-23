@@ -884,22 +884,91 @@
 # print("The class average:", result,"%")
 
 #Future Value
-p = float(input('Enter present value: '))
-i = float(input('Enter monthly interest: '))
-t = int(input('Enter number of months: '))
-count = 1
+# p = float(input('Enter present value: '))
+# i = float(input('Enter monthly interest: '))
+# t = int(input('Enter number of months: '))
+# count = 1
 
-def future_value(p, i, t):
-    f = p * ((1 + i) ** t)
-    return f
+# def future_value(p, i, t):
+#     f = p * ((1 + i) ** t)
+#     return f
 
-for month in range(1, t + 1):
-    f = p * ((1 + i) ** month)
-    print(f"Value: ${f:,.2f} Month: {month}")
+# for month in range(1, t + 1):
+#     f = p * ((1 + i) ** month)
+#     print(f"Value: ${f:,.2f} Month: {month}")
 
-final_value = future_value(p, i, t)
-print(f"This is the future value ${final_value:,.2f}")
+# final_value = future_value(p, i, t)
+# print(f"This is the future value ${final_value:,.2f}")
 
+#Falling_Distance
 
+# def falling_distance(t):
+#     g = 9.8
+#     d = 0.5 * g * (t ** 2)
+#     print(f"{d:.2f} meters in {t} seconds")
 
+# for t in range(1, 10):
+#     falling_distance(t)
 
+#Kinetic Energy
+
+# m = float(input("Enter the mass in kilograms: "))
+# v = float(input("Enter the velocity in meters per second: "))
+
+# def kinetic_energy(m, v):
+#     ke = 0.5 * (m * (v ** 2))
+#     return ke
+
+# result = kinetic_energy(m, v)
+# print(f"{result:.2f} joules")
+
+# feet = float(input("Enter the number of feet: "))
+
+# def feet_to_inches(feet):
+#     converter = 12
+#     inches = feet * converter
+#     return inches
+
+# result = feet_to_inches(feet)
+# print(f"{feet} feet is equivalent to {result} inches")
+
+# import random
+
+# x = random.randint(1, 1000)
+# y = random.randint(1, 1000)
+
+# def math_quiz(x, y):
+#     print("Solve the math problem:")
+#     print(f"  {x}")
+#     print(f"+ {y}")
+#     answer = int(input("Solve the problem: "))
+#     if answer == x + y:
+#         print("Correct!")
+#     else:
+#         print("Incorrect!")
+
+# math_quiz(x, y)
+import random
+
+x = random.randint(1, 1000)
+y = random.randint(1, 1000)
+def math_quiz(x, y):
+    count = 0
+    while True:
+        print("Solve the math problem:")
+        print(f"  {x}")
+        print(f"+ {y}")
+        answer = int(input("Solve the problem: "))
+        count += 1
+        if answer == x + y:
+            print(f"Correct! {count} attempts.")
+            x = random.randint(1, 1000)
+            y = random.randint(1, 1000)
+            count = 0
+            continue
+        else:
+            print("Try again!")
+
+math_quiz(x, y)
+
+        
