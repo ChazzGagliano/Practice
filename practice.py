@@ -1003,14 +1003,19 @@
 # print(f"Class average: {result}%")
 # determine_grade(test1, test2, test3, test4, test5)
 
-def falling_distance(t):
-    g = 9.8
-    d = 0.5 * g * (t ** 2)
-    print(f"{d:.2f} meters in {t} seconds")
+# def falling_distance(t):
+#     g = 9.8
+#     d = 0.5 * g * (t ** 2)
+#     print(f"{d:.2f} meters in {t} seconds")
 
-for t in range(1, 11):
-    falling_distance(t)
+# for t in range(1, 11):
+#     falling_distance(t)
 
+
+#Copy data to another file
+with open('my_data.txt', 'r') as data_file, open('my_copy.txt', 'w') as copy_file:
+    for line in data_file:
+        copy_file.write(line)
 
 
         
