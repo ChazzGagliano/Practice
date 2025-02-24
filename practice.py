@@ -1013,9 +1013,41 @@
 
 
 #Copy data to another file
-with open('my_data.txt', 'r') as data_file, open('my_copy.txt', 'w') as copy_file:
-    for line in data_file:
-        copy_file.write(line)
+# with open('my_data.txt', 'r') as data_file, open('my_copy.txt', 'w') as copy_file:
+#     for line in data_file:
+#         copy_file.write(line)
 
 
+# grade_file = open('grade.txt', 'r')
+# passing_file = open('passing.txt', 'w')
+
+# for line in grade_file:
+#     grade = int(line.strip())
+#     if grade >= 6:
+#         passing_file.write(str(grade) + '\n')
+
+# grade_file.close()
+# passing_file.close()
+
+# file_name = open('words.txt', 'r')
+# count = 0
+
+# for line in file_name:
+#     if line.strip() == "sunshine":
+#         count += 1
+
+# file_name.close()
+
+def main():
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt', 'r') as file:
+        count = 0
+        total = 0
+        for line in file:
+            total += int(line)
+            count += 1
+    average = total / count
+    print(f'The average is {average}')
+
+main()
+        
         
