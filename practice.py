@@ -1052,17 +1052,20 @@
         
 def main():
     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt', 'r') as main_file, open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'w') as copy_file:
-        for line in main_file:
-            if int(line) > 0:
-                copy_file.write(line)
-
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'r') as copy_file:
         total = 0
         count = 0
-        for line in copy_file:
+        for line in main_file:
+            copy_file.write(line)
             total += int(line)
             count += 1
         average = total / count
-        print(average)
 
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'a') as copy_file:
+        copy_file.write(f'{average}')
+
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'r') as copy_file:
+        result = copy_file.read()
+    
+    print(result)
+    
 main()
