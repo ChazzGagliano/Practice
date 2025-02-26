@@ -154,22 +154,59 @@
 # main()
 
 #4 Item counter:
+# def main():
+#     try:
+#         with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/names.txt', 'r') as file:
+#             count = 0
+#             for line in file:
+#                 if line != '':
+#                     count += 1
+#                 else:
+#                     break
+#             print(f"{count} names in file.")
+
+#     except FileNotFoundError:
+#         print("File not Found")
+
+
+# main()
+
+#5 Sum of numbers
+# def main():
+#     try:
+#         with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt', 'r') as file:
+#             total = 0
+#             for line in file:
+#                 if line != '':
+#                     number = int(line)
+#                     total += number
+#                 else:
+#                     break
+#             print(total)
+#     except FileNotFoundError:
+#         print("File not found")
+    
+# main()
+
+#7 Random Number File Writer
+import random
+
 def main():
-    try:
-        with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/names.txt', 'r') as file:
-            count = 0
-            for line in file:
-                if line != '':
-                    count += 1
-                else:
-                    break
-            print(f"{count} names in file.")
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'w') as file:
+        times = int(input("Enter the amount of numbers in the file: "))
+        for i in range(times):
+            number = random.randint(1, 500)
+            file.write(f'{number}\n')
 
-    except FileNotFoundError:
-        print("File not Found")
-
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'r') as file:
+        for line in file:
+            print(line.strip())
 
 main()
+
+
+
+
 
 
 
