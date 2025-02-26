@@ -116,21 +116,42 @@
 
 # main()
 
-#2 File Head Displai
+# #2 File Head Displai
+
+# def main():
+#     file = input("Enter name of file: ")
+#     file_path = f'/Users/chazzgagliano/Desktop/CSC106/CSC106Python/{file}'
+#     with open(file_path, "r") as i:
+#         count = 0
+#         for line in i:
+#             if count == 5:
+#                 break
+    
+#             if line.strip():
+#                 print(line.strip())
+#                 count += 1 
+#             else:
+#                 count += 5
+
+# main()
+
+#3 Line numbers
 
 def main():
     file = input("Enter name of file: ")
     file_path = f'/Users/chazzgagliano/Desktop/CSC106/CSC106Python/{file}'
-    with open(file_path, "r") as i:
-        count = 0
-        for line in i:
-            if count == 5:
-                break
-    
+    with open(file_path, 'r') as f:
+        count = 1
+        for line in f:
             if line.strip():
-                print(line.strip())
-                count += 1 
+                print(f"{count}: {line.strip()}")
+                count += 1
             else:
-                count += 5
+                break
+                
+
+
 main()
+
+
 
