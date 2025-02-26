@@ -189,21 +189,50 @@
 # main()
 
 #7 Random Number File Writer
-import random
+# import random
 
-def main():
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'w') as file:
-        times = int(input("Enter the amount of numbers in the file: "))
-        for i in range(times):
-            number = random.randint(1, 500)
-            file.write(f'{number}\n')
+# def main():
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'w') as file:
+#         times = int(input("Enter the amount of numbers in the file: "))
+#         for i in range(times):
+#             number = random.randint(1, 500)
+#             file.write(f'{number}\n')
 
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'r') as file:
-        for line in file:
-            print(line.strip())
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'r') as file:
+#         for line in file:
+#             print(line.strip())
 
-main()
+# main()
 
+#8 Random Number File Reader
+# import random
+
+# def main():
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'r') as file:
+#         total = 0
+#         count = 0
+#         for line in file:
+#             number = int(line)
+#             total += number
+#             count += 1
+#         print(f'There are {count} numbers in the file and the total is {total}.')
+
+
+# main()
+
+# import random
+
+# def main():
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'a') as file:
+#         add = int(input("how many more numbers are we adding?: "))
+#         for i in range(add):
+#             number = random.randint(1, 500)
+#             file.write(f'{number}\n')
+
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'r') as file:
+#         for line in file:
+#             print(line.strip())
+# main()
 
 
 
