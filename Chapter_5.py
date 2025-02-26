@@ -137,18 +137,36 @@
 
 #3 Line numbers
 
-def main():
-    file = input("Enter name of file: ")
-    file_path = f'/Users/chazzgagliano/Desktop/CSC106/CSC106Python/{file}'
-    with open(file_path, 'r') as f:
-        count = 1
-        for line in f:
-            if line.strip():
-                print(f"{count}: {line.strip()}")
-                count += 1
-            else:
-                break
+# def main():
+#     file = input("Enter name of file: ")
+#     file_path = f'/Users/chazzgagliano/Desktop/CSC106/CSC106Python/{file}'
+#     with open(file_path, 'r') as f:
+#         count = 1
+#         for line in f:
+#             if line.strip():
+#                 print(f"{count}: {line.strip()}")
+#                 count += 1
+#             else:
+#                 break
                 
+
+
+# main()
+
+#4 Item counter:
+def main():
+    try:
+        with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/names.txt', 'r') as file:
+            count = 0
+            for line in file:
+                if line != '':
+                    count += 1
+                else:
+                    break
+            print(f"{count} names in file.")
+
+    except FileNotFoundError:
+        print("File not Found")
 
 
 main()
