@@ -1050,22 +1050,70 @@
 
 # main()
         
-def main():
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt', 'r') as main_file, open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'w') as copy_file:
-        total = 0
-        count = 0
-        for line in main_file:
-            copy_file.write(line)
-            total += int(line)
-            count += 1
-        average = total / count
+# def main():
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt', 'r') as main_file, open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'w') as copy_file:
+#         total = 0
+#         count = 0
+#         for line in main_file:
+#             copy_file.write(line)
+#             total += int(line)
+#             count += 1
+#         average = total / count
 
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'a') as copy_file:
-        copy_file.write(f'{average}')
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'a') as copy_file:
+#         copy_file.write(f'{average}')
 
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'r') as copy_file:
-        result = copy_file.read()
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt', 'r') as copy_file:
+#         result = copy_file.read()
     
-    print(result)
+#     print(result)
     
-main()
+# main()
+
+# with open('fahrenheit.txt', 'r') as main_file, open('celsius.txt', 'w') as copy_file:
+#     try:
+#         for line in main_file:
+#             temp = float(line)
+#             cels = (temp - 32) * (5/9)
+#             copy_file.write(str(cels))
+
+#     except InvalvidError:
+#         print("Invalid Error")
+
+
+
+# with open("numbers.txt", "r") as file:
+#     negative_count = 0
+#     positive_count = 0
+#     negative_total = 0
+#     positive_total = 0
+#     for number in file:
+#         number = float(number)
+#         if number > 0:
+#             positive_total += number
+#             positive_count += 1
+#         elif number < 0:
+#             negative_total += number
+#             negative_count += 1
+
+# if negative_count == 0:
+#     print("NaN")
+# else:
+#     print(negative_total/negative_count)
+
+# if positive_count == 0:
+#     print("NaN")
+# else:
+#     print(positive_total/positive_count)
+
+# try:
+#     with open('fahrenheit.txt', 'r') as f_file, open('celsius.txt', 'w') as c_file:
+#         try:
+#             for line in f_file:
+#                 number = float(line)
+#                 celc = (number - 32) * (5/9)
+#                 c_file.write(f'{celc:.2f}\n')
+#         except ValueError:
+#             print("Invalid data")
+# except FileNotFoundError:
+#             print("File not found")
