@@ -233,6 +233,15 @@
 #             print(line)
 # main()
 
+# def main():
+#     with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt", "r") as file:
+#         items = 0
+#         for line in file:
+#             items += 1
+#         print(f"There are {items} items in this file.")
+
+# main()
+
 
 
 

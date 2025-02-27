@@ -22,13 +22,13 @@
 # main()
 
 #3 How much insurance?
-def main():
-    cost = float(input("Enter replacement cost of building: "))
-    result = insurance_cost(cost)
-    print(f"The minimum cost of insurance would be ${result:,.2f}")
+# def main():
+#     cost = float(input("Enter replacement cost of building: "))
+#     result = insurance_cost(cost)
+#     print(f"The minimum cost of insurance would be ${result:,.2f}")
 
-def insurance_cost(cost):
-    insurance = cost * 0.80
-    return insurance
+# def insurance_cost(cost):
+#     insurance = cost * 0.80
+#     return insurance
 
-main()
+# main()
