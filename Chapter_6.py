@@ -242,6 +242,15 @@
 
 # main()
 
+def main():
+    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt", "r") as file:
+        total = 0
+        for line in file:
+            number = int(line)
+            total += number
+        print(total)
+main()
+
 
 
 
