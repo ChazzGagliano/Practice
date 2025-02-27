@@ -34,19 +34,31 @@
 # main()
 
 #4 Automobile costs
-def main():
-    loan = float(input("Enter monthly loan payment: "))
-    insurance = float(input("Enter monthly insurance payment: "))
-    gas = float(input("Enter monthly gas payment: "))
-    oil = float(input("Enter monthly oil payment: "))
-    tires = float(input("Enter monthly tires payment: "))
-    maintenance = float(input("Enter montly maintenance payment: "))
-    automobile_cost(loan, insurance, gas, oil, tires, maintenance)
+# def main():
+#     loan = float(input("Enter monthly loan payment: "))
+#     insurance = float(input("Enter monthly insurance payment: "))
+#     gas = float(input("Enter monthly gas payment: "))
+#     oil = float(input("Enter monthly oil payment: "))
+#     tires = float(input("Enter monthly tires payment: "))
+#     maintenance = float(input("Enter montly maintenance payment: "))
+#     automobile_cost(loan, insurance, gas, oil, tires, maintenance)
 
-def automobile_cost(loan, insurance, gas, oil, tires, maintenance):
-    monthly_cost = loan + insurance + gas + oil + tires + maintenance
-    annual_cost = monthly_cost * 12
-    print(f"The monthly cost of the automobile is ${monthly_cost:,.2f}")
-    print(f"The annual cost of the automobile is ${annual_cost:,.2f}")
+# def automobile_cost(loan, insurance, gas, oil, tires, maintenance):
+#     monthly_cost = loan + insurance + gas + oil + tires + maintenance
+#     annual_cost = monthly_cost * 12
+#     print(f"The monthly cost of the automobile is ${monthly_cost:,.2f}")
+#     print(f"The annual cost of the automobile is ${annual_cost:,.2f}")
+
+# main()
+
+#5 Property Tax
+def main():
+    property_value = float(input("Enter value of propery: "))
+    tax(property_value)
+
+def tax(property_value):
+    assessment_value = property_value * .60
+    property_tax = (assessment_value/100) * .72
+    print(f"The property tax for the assessment value of ${assessment_value:,.2f} is ${property_tax:,.2f}.")
 
 main()
