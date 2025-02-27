@@ -220,19 +220,21 @@
 
 # main()
 
-# import random
+#11 Personal Web Page Generator
 
-# def main():
-#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'a') as file:
-#         add = int(input("how many more numbers are we adding?: "))
-#         for i in range(add):
-#             number = random.randint(1, 500)
-#             file.write(f'{number}\n')
+def main():
+    name = input("Enter your name: ")
+    description = input("Describe yourself: ")
+    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt", "w") as file:
+        file.write(f"<html>\n<head>\n</head>\n<body>\n  <center>\n    <h1>{name}</h1>\n  </center>\n<hr />\n{description}\n<hr />\n</body>\n</html>")
 
-#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt', 'r') as file:
-#         for line in file:
-#             print(line.strip())
-# main()
+    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/random.txt", "r") as file:
+        for line in file:
+            print(line)
+main()
+
+
+
 
 
 
