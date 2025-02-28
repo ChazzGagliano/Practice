@@ -52,13 +52,13 @@
 # main()
 
 #5 Property Tax
-def main():
-    property_value = float(input("Enter value of propery: "))
-    tax(property_value)
+# def main():
+#     property_value = float(input("Enter value of propery: "))
+#     tax(property_value)
 
-def tax(property_value):
-    assessment_value = property_value * .60
-    property_tax = (assessment_value/100) * .72
-    print(f"The property tax for the assessment value of ${assessment_value:,.2f} is ${property_tax:,.2f}.")
+# def tax(property_value):
+#     assessment_value = property_value * .60
+#     property_tax = (assessment_value/100) * .72
+#     print(f"The property tax for the assessment value of ${assessment_value:,.2f} is ${property_tax:,.2f}.")
 
-main()
+# main()

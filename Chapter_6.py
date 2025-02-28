@@ -263,7 +263,17 @@
 #         print(average)
 # main()
 
+# def main():
+#     with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/numbers.txt", 'r') as main_file, open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt", 'w') as copy_file:
+#         for line in main_file:
+#             number = int(line)
+#             number *= 2
+#             copy_file.write(f"{number}\n")
 
+#     with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt", "r") as file:
+#         for line in file:
+#             print(line)
+# main()
 
 
 
