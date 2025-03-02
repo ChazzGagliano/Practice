@@ -47,17 +47,36 @@
 
 # main()
 
-2 Lottery Number Generator
-import random
+#2 Lottery Number Generator
+# import random
+
+# def main():
+#     lottery = []
+#     for i in range(7):
+#         number = random.randint(0, 9)
+#         lottery.append(number)
+
+#     print("The lottery numbers are ....")
+#     print(lottery)
+
+# main()
 
 def main():
-    lottery = []
-    for i in range(7):
-        number = random.randint(0, 9)
-        lottery.append(number)
+    month = 1
+    array = []
+    for i in range(12):
+        rainfall = float(input(f"Enter the amount of rain in inches on month #{month}: "))
+        array.append(rainfall)
+        month += 1
+        
+    min_rain = min(array)
+    max_rain = max(array)
+    total = sum(array)
+    average = sum(array) / len(array)
+    print(f"The lowest amount of rain in a month was {min_rain}")
+    print(f"The most rain for one month was {max_rain:.2f} inches")
+    print(f"The total rainfall for the 12 months was {total:.2f} inches.")
+    print(f"The average rain fall per month was {average:.2f} inches")
 
-    print("The lottery numbers are ....")
-    print(lottery)
 
 main()
-
