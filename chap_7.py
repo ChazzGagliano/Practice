@@ -31,18 +31,33 @@
 # print(result)
 
 #1 Total Sales
-def main():
-    total = 0
-    count = 1
-    week = []
-    for i in range(7):
-        sales = float(input(f"Enter the sales for day #{count}: "))
-        week.append(sales)
-        count += 1
+# def main():
+#     total = 0
+#     count = 1
+#     week = []
+#     for i in range(7):
+#         sales = float(input(f"Enter the sales for day #{count}: "))
+#         week.append(sales)
+#         count += 1
     
-    for i in week:
-        total += i
+#     for i in week:
+#         total += i
 
-    print(f"The total for the week is ${total:,.2f}")
+#     print(f"The total for the week is ${total:,.2f}")
+
+# main()
+
+2 Lottery Number Generator
+import random
+
+def main():
+    lottery = []
+    for i in range(7):
+        number = random.randint(0, 9)
+        lottery.append(number)
+
+    print("The lottery numbers are ....")
+    print(lottery)
 
 main()
+
