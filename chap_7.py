@@ -99,20 +99,46 @@
 
 # main()
 
-#6 Larger than n
 
+
+# 6 Larger than n
+
+# def main():
+#     array = [5, 8, 2, 5, 6, 4, 3, 10, 7]
+#     number = int(input("Enter a number: "))
+#     result = greater_than(array, number)
+#     print(f"These numbers greater are {result}")
+
+# def greater_than(array, number):
+#     new_array = []
+#     for i in array:
+#         if number < i:
+#             new_array.append(i)
+
+#     return new_array
+
+# main()
+
+#7 Driver License Exam
 def main():
-    array = [5, 8, 2, 5, 6, 4, 3, 10, 7]
-    number = int(input("Enter a number: "))
-    result = greater_than(array, number)
-    print(f"These numbers greater are {result}")
+    right_answers = 0
+    correct_list = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
+    wrong_questions = []
+    index = 0
+    question_number = 1
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/answers.txt', 'r') as file:
+        for i in file:
+            if correct_list[index] == i.strip():
+                right_answers += 1
+            elif correct_list != i.strip():
+                wrong_questions.append(question_number)
+            index += 1
+            question_number += 1
 
-def greater_than(array, number):
-    new_array = []
-    for i in array:
-        if number < i:
-            new_array.append(i)
-
-    return new_array
+    if right_answers > 15:
+        print(f"You passed! you got {right_answers} right answers! You got {len(wrong_questions)} questions wrong. these are the questions you got wrong {wrong_questions}")
+    else:
+        print(f"Unfortunately you didnt pass. Your score was {score}%, these are the questions you got wrong{wrong_questions}")
 
 main()
+
