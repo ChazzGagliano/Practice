@@ -143,33 +143,47 @@
 # main()
 
 #9 Population Data
-def main():
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/USPopulation.txt', 'r') as file:
-        data = []
-        change = []
-        for line in file:
-            number = int(line)
-            data.append(number)
+# def main():
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/USPopulation.txt', 'r') as file:
+#         data = []
+#         change = []
+#         for line in file:
+#             number = int(line)
+#             data.append(number)
 
-        for i in range(1, len(data)):
-            change.append(data[i] - data[i - 1])
+#         for i in range(1, len(data)):
+#             change.append(data[i] - data[i - 1])
         
-    max_change = change[0]
-    min_change = change[0]
-    first_comp = 1951
-    max_year = first_comp
-    min_year = first_comp
-    for i in range(1, len(change)):
-        if change[i] > max_change:
-            max_change = change[i]
-            max_year = first_comp + i 
-        elif change[i] < min_change:
-            min_change = change[i]
-            min_year = first_comp + i
+#     max_change = change[0]
+#     min_change = change[0]
+#     first_comp = 1951
+#     max_year = first_comp
+#     min_year = first_comp
+#     for i in range(1, len(change)):
+#         if change[i] > max_change:
+#             max_change = change[i]
+#             max_year = first_comp + i 
+#         elif change[i] < min_change:
+#             min_change = change[i]
+#             min_year = first_comp + i
 
-    average = sum(change) / len(change)
-    print(f"The average annual change in population in the time period {average:.2f}.")
-    print(f"The year with the greatest increase in population is {max_year}.")
-    print(f"The year with the lowest increase in population is {min_year}.")
+#     average = sum(change) / len(change)
+#     print(f"The average annual change in population in the time period {average:.2f}.")
+#     print(f"The year with the greatest increase in population is {max_year}.")
+#     print(f"The year with the lowest increase in population is {min_year}.")
 
-main()
+# main()
+
+# array = [1, 44, 37, 66, 8, 10, -1]
+# min_number = array[0]
+# max_number = array[0]
+
+# for i in range(0, len(array)):
+#     if array[i] > max_number:
+#         max_number = array[i]
+#     elif array[i] < min_number:
+#         min_number = array[i]
+
+# print(f"{sum(array) / len(array)}")
+# print(f"{max_number}")
+# print(f"{min_number}")
