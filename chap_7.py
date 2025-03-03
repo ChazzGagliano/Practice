@@ -120,25 +120,56 @@
 # main()
 
 #7 Driver License Exam
-def main():
-    right_answers = 0
-    correct_list = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
-    wrong_questions = []
-    index = 0
-    question_number = 1
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/answers.txt', 'r') as file:
-        for i in file:
-            if correct_list[index] == i.strip():
-                right_answers += 1
-            elif correct_list != i.strip():
-                wrong_questions.append(question_number)
-            index += 1
-            question_number += 1
+# def main():
+#     right_answers = 0
+#     correct_list = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
+#     wrong_questions = []
+#     index = 0
+#     question_number = 1
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/answers.txt', 'r') as file:
+#         for i in file:
+#             if correct_list[index] == i.strip():
+#                 right_answers += 1
+#             elif correct_list != i.strip():
+#                 wrong_questions.append(question_number)
+#             index += 1
+#             question_number += 1
 
-    if right_answers > 15:
-        print(f"You passed! you got {right_answers} right answers! You got {len(wrong_questions)} questions wrong. these are the questions you got wrong {wrong_questions}")
-    else:
-        print(f"Unfortunately you didnt pass. Your score was {score}%, these are the questions you got wrong{wrong_questions}")
+#     if right_answers > 15:
+#         print(f"You passed! you got {right_answers} right answers! You got {len(wrong_questions)} questions wrong. these are the questions you got wrong {wrong_questions}")
+#     else:
+#         print(f"Unfortunately you didnt pass. Your score was {score}%, these are the questions you got wrong{wrong_questions}")
+
+# main()
+
+#9 Population Data
+def main():
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/USPopulation.txt', 'r') as file:
+        data = []
+        change = []
+        for line in file:
+            number = int(line)
+            data.append(number)
+
+        for i in range(1, len(data)):
+            change.append(data[i] - data[i - 1])
+        
+    max_change = change[0]
+    min_change = change[0]
+    first_comp = 1951
+    max_year = first_comp
+    min_year = first_comp
+    for i in range(1, len(change)):
+        if change[i] > max_change:
+            max_change = change[i]
+            max_year = first_comp + i 
+        elif change[i] < min_change:
+            min_change = change[i]
+            min_year = first_comp + i
+
+    average = sum(change) / len(change)
+    print(f"The average annual change in population in the time period {average:.2f}.")
+    print(f"The year with the greatest increase in population is {max_year}.")
+    print(f"The year with the lowest increase in population is {min_year}.")
 
 main()
-
