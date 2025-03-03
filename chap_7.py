@@ -61,22 +61,41 @@
 
 # main()
 
-def main():
-    month = 1
-    array = []
-    for i in range(12):
-        rainfall = float(input(f"Enter the amount of rain in inches on month #{month}: "))
-        array.append(rainfall)
-        month += 1
+# def main():
+#     month = 1
+#     array = []
+#     for i in range(12):
+#         rainfall = float(input(f"Enter the amount of rain in inches on month #{month}: "))
+#         array.append(rainfall)
+#         month += 1
         
-    min_rain = min(array)
-    max_rain = max(array)
-    total = sum(array)
-    average = sum(array) / len(array)
-    print(f"The lowest amount of rain in a month was {min_rain}")
-    print(f"The most rain for one month was {max_rain:.2f} inches")
-    print(f"The total rainfall for the 12 months was {total:.2f} inches.")
-    print(f"The average rain fall per month was {average:.2f} inches")
+#     min_rain = min(array)
+#     max_rain = max(array)
+#     total = sum(array)
+#     average = sum(array) / len(array)
+#     print(f"The lowest amount of rain in a month was {min_rain}")
+#     print(f"The most rain for one month was {max_rain:.2f} inches")
+#     print(f"The total rainfall for the 12 months was {total:.2f} inches.")
+#     print(f"The average rain fall per month was {average:.2f} inches")
 
+
+# main()
+
+#4 Number Analysis Program
+def main():
+    array = []
+    for i in range(20):
+        number = int(input("Enter a number: "))
+        array.append(number)
+
+    lowest_number = min(array)
+    highest_number = max(array)
+    total = sum(array)
+    average = total / len(array)
+    print(f"Lowest Number: {lowest_number}")
+    print(f"Highest Number: {highest_number}")
+    print(f"Total: {total}")
+    print(f"Average: {average}")
 
 main()
+
