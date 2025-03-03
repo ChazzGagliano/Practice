@@ -82,20 +82,37 @@
 # main()
 
 #4 Number Analysis Program
-def main():
-    array = []
-    for i in range(20):
-        number = int(input("Enter a number: "))
-        array.append(number)
+# def main():
+#     array = []
+#     for i in range(20):
+#         number = int(input("Enter a number: "))
+#         array.append(number)
 
-    lowest_number = min(array)
-    highest_number = max(array)
-    total = sum(array)
-    average = total / len(array)
-    print(f"Lowest Number: {lowest_number}")
-    print(f"Highest Number: {highest_number}")
-    print(f"Total: {total}")
-    print(f"Average: {average}")
+#     lowest_number = min(array)
+#     highest_number = max(array)
+#     total = sum(array)
+#     average = total / len(array)
+#     print(f"Lowest Number: {lowest_number}")
+#     print(f"Highest Number: {highest_number}")
+#     print(f"Total: {total}")
+#     print(f"Average: {average}")
+
+# main()
+
+#6 Larger than n
+
+def main():
+    array = [5, 8, 2, 5, 6, 4, 3, 10, 7]
+    number = int(input("Enter a number: "))
+    result = greater_than(array, number)
+    print(f"These numbers greater are {result}")
+
+def greater_than(array, number):
+    new_array = []
+    for i in array:
+        if number < i:
+            new_array.append(i)
+
+    return new_array
 
 main()
-
