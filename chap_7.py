@@ -328,14 +328,65 @@
 
 # main()
 
-def main():
-    try:
-        array = ['Yes, of course!', 'Without a doubt, yes.', 'You can count on it.', 'For sure!', 'Ask me later.', "I'm not sure.", "I can't tell right now.", "I'll tell you after my nap.", 'No way!', "I don't think so.", 'Without a doubt, no.', 'The answer is clearly NO.']
-        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt", "w") as file:
-            for i in array:
-                file.write(f"{i}\n")
+# def main():
+#     try:
+#         array = ['Yes, of course!', 'Without a doubt, yes.', 'You can count on it.', 'For sure!', 'Ask me later.', "I'm not sure.", "I can't tell right now.", "I'll tell you after my nap.", 'No way!', "I don't think so.", 'Without a doubt, no.', 'The answer is clearly NO.']
+#         with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt", "w") as file:
+#             for i in array:
+#                 file.write(f"{i}\n")
             
 
-    except FileNotFoundError:
-        print("File not Found")
-main()
+#     except FileNotFoundError:
+#         print("File not Found")
+# main()
+
+# array = [1, 20, 4, 2, 6, 7, 8]
+# max_product = array[0] * array[1]
+# min_product = array[0] * array[1]
+
+
+# for i in range(1, len(array)):
+#     product = array[i] * array[i - 1]
+#     if product > max_product:
+#         max_product = product
+#     elif product < min_product:
+#         min_product = product 
+
+# print(max_product)
+# print(min_product)
+
+# def main():
+#     try:
+#         population = []
+#         with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/uspopulation.txt", "r") as file:
+#             for line in file:
+#                 number = int(line)
+#                 population.append(number)
+
+#         change = []
+#         for i in range(1, len(population)):
+#             yearly_increase = population[i] - population[i - 1]
+#             change.append(yearly_increase)
+
+#         max_change = change[0]
+#         min_change = change[0]
+#         first_year = 1951
+#         years = []
+#         for i in range(len(change)):
+#             if change[i] > max_change:
+#                 max_change = change[i]
+#                 highest_year = first_year + i 
+#             if change[i] < min_change:
+#                 min_change = change[i]
+#                 lowest_year = first_year + i 
+#         print(change)
+#         print(len(change))
+#         average = sum(change) / len(change)
+#         print(f"{average:.2f}")
+#         print(highest_year)
+#         print(lowest_year)
+
+#     except FileNotFoundError:
+#         print("File Not Found")
+# main()
+
