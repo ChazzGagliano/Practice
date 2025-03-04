@@ -309,21 +309,33 @@
 
 #5 Charge Account Validation
 
+# def main():
+#     try:
+#         accounts = []
+#         with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/charge_accounts.txt", "r") as file:
+#             for line in file:
+#                 number = int(line)
+#                 accounts.append(number)
+
+#             numbers = int(input("Enter you seven digit account: "))
+#             if numbers in accounts:
+#                 print("The number is valid")
+#             else:
+#                 print("The number is not valid")
+
+#     except FileNotFoundError:
+#         print("file not found")
+
+# main()
+
 def main():
     try:
-        accounts = []
-        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/charge_accounts.txt", "r") as file:
-            for line in file:
-                number = int(line)
-                accounts.append(number)
-
-            numbers = int(input("Enter you seven digit account: "))
-            if numbers in accounts:
-                print("The number is valid")
-            else:
-                print("The number is not valid")
+        array = ['Yes, of course!', 'Without a doubt, yes.', 'You can count on it.', 'For sure!', 'Ask me later.', "I'm not sure.", "I can't tell right now.", "I'll tell you after my nap.", 'No way!', "I don't think so.", 'Without a doubt, no.', 'The answer is clearly NO.']
+        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/copy.txt", "w") as file:
+            for i in array:
+                file.write(f"{i}\n")
+            
 
     except FileNotFoundError:
-        print("file not found")
-
+        print("File not Found")
 main()
