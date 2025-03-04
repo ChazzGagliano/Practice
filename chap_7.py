@@ -273,36 +273,57 @@
 #     print(f"${total:,.2f}")
 # main()
 
-def main():
-    rain_stats()
+# def main():
+#     rain_stats()
 
-def rain_stats():
-    count = 1
-    year = []
-    for i in range(12):
-        rain = float(input(f"Enter the inches of rain on month #{count}: "))
-        year.append(rain)
-        count += 1
+# def rain_stats():
+#     count = 1
+#     year = []
+#     for i in range(12):
+#         rain = float(input(f"Enter the inches of rain on month #{count}: "))
+#         year.append(rain)
+#         count += 1
 
-    print(year)
-    highest_month = 0
-    lowest_month = 0
-    max_rain = year[0]
-    min_rain = year[0]
-    for i in range(len(year)):
-        if year[i] > max_rain:
-            max_rain = year[i]
-            highest_month = i + 1
-        elif year[i] < min_rain:
-            min_rain = year[i]
-            lowest_month = i + 1
+#     print(year)
+#     highest_month = 0
+#     lowest_month = 0
+#     max_rain = year[0]
+#     min_rain = year[0]
+#     for i in range(len(year)):
+#         if year[i] > max_rain:
+#             max_rain = year[i]
+#             highest_month = i + 1
+#         elif year[i] < min_rain:
+#             min_rain = year[i]
+#             lowest_month = i + 1
     
-    print(lowest_month)
-    print(highest_month)
-    print(sum(year))
-    average = sum(year) / len(year)
-    print(f"{average:2f}")
+#     print(lowest_month)
+#     print(highest_month)
+#     print(sum(year))
+#     average = sum(year) / len(year)
+#     print(f"{average:2f}")
  
 
+
+# main()
+
+#5 Charge Account Validation
+
+def main():
+    try:
+        accounts = []
+        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/charge_accounts.txt", "r") as file:
+            for line in file:
+                number = int(line)
+                accounts.append(number)
+
+            numbers = int(input("Enter you seven digit account: "))
+            if numbers in accounts:
+                print("The number is valid")
+            else:
+                print("The number is not valid")
+
+    except FileNotFoundError:
+        print("file not found")
 
 main()
