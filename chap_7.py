@@ -188,4 +188,19 @@
 # print(f"{max_number}")
 # print(f"{min_number}")
 
+#11 Lo Shu Magic Square
+def main():
+    two_dim_square = [
+        [4, 9, 2],
+        [3, 5, 7],
+        [8, 1, 6],
+    ]
+    two_d(two_dim_square)
 
+def two_d(two_dim_square):
+    if sum(two_dim_square[0]) == 15 and sum(two_dim_square[1]) == 15 and sum(two_dim_square[2]) == 15 and (two_dim_square[0][0] + two_dim_square[1][0] + two_dim_square[2][0]) == 15 and (two_dim_square[0][1] + two_dim_square[1][1] + two_dim_square[2][1]) == 15  and (two_dim_square[0][2] + two_dim_square[1][2] + two_dim_square[2][2]) == 15 and (two_dim_square[0][0] + two_dim_square[1][1] + two_dim_square[2][2]) == 15 and (two_dim_square[2][0] + two_dim_square[1][1] + two_dim_square[0][2]) == 15:
+        print("This is a Lo Shu Magic square!")
+    else:
+        print("Not a Lo Shu Magic square!")
+
+main()

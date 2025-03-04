@@ -32,13 +32,14 @@
         
 # main()
 
-#12 Pig Latin
-def main():
-    sentence = str(input("Enter a sentence: ")).split()
-    pig_latin(sentence)
+# 12 Pig Latin
+# def main():
+#     sentence = str(input("Enter a sentence: ")).split()
+#     pig_latin(sentence)
 
-def pig_latin(sentence):
-    for i in sentence:
-        print(i[1:] + i[0] + "ay",  end = " ")
+# def pig_latin(sentence):
+#     for i in sentence:
+#         print(i[1:] + i[0] + "ay",  end = " ")
 
-main()
+# main()
+
