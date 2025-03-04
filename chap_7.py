@@ -95,7 +95,7 @@
 #     print(f"Lowest Number: {lowest_number}")
 #     print(f"Highest Number: {highest_number}")
 #     print(f"Total: {total}")
-#     print(f"Average: {average}")
+#     print(f"Average: {average:.2f}")
 
 # main()
 
@@ -371,6 +371,7 @@
 #         max_change = change[0]
 #         min_change = change[0]
 #         first_year = 1951
+#         print(change)
 #         years = []
 #         for i in range(len(change)):
 #             if change[i] > max_change:
@@ -390,3 +391,22 @@
 #         print("File Not Found")
 # main()
 
+#10 World Series Champions
+def main():
+    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
+        count = 0
+        team = input("Enter a team: ")
+        for line in file:
+            line = line.strip()
+            if team == line:
+                count += 1
+
+        if count == 0:
+            print("This team has never won a world series.")
+        else:
+            print(f"This team has won {count} times.")
+            
+
+
+
+main()
