@@ -187,3 +187,5 @@
 # print(f"{sum(array) / len(array)}")
 # print(f"{max_number}")
 # print(f"{min_number}")
+
+
