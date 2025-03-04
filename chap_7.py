@@ -189,18 +189,43 @@
 # print(f"{min_number}")
 
 #11 Lo Shu Magic Square
-def main():
-    two_dim_square = [
-        [4, 9, 2],
-        [3, 5, 7],
-        [8, 1, 6],
-    ]
-    two_d(two_dim_square)
+# def main():
+#     two_dim_square = [
+#         [4, 9, 2],
+#         [3, 5, 7],
+#         [8, 1, 6],
+#     ]
+#     two_d(two_dim_square)
 
-def two_d(two_dim_square):
-    if sum(two_dim_square[0]) == 15 and sum(two_dim_square[1]) == 15 and sum(two_dim_square[2]) == 15 and (two_dim_square[0][0] + two_dim_square[1][0] + two_dim_square[2][0]) == 15 and (two_dim_square[0][1] + two_dim_square[1][1] + two_dim_square[2][1]) == 15  and (two_dim_square[0][2] + two_dim_square[1][2] + two_dim_square[2][2]) == 15 and (two_dim_square[0][0] + two_dim_square[1][1] + two_dim_square[2][2]) == 15 and (two_dim_square[2][0] + two_dim_square[1][1] + two_dim_square[0][2]) == 15:
-        print("This is a Lo Shu Magic square!")
-    else:
-        print("Not a Lo Shu Magic square!")
+# def two_d(two_dim_square):
+#     if sum(two_dim_square[0]) == 15 and sum(two_dim_square[1]) == 15 and sum(two_dim_square[2]) == 15 and (two_dim_square[0][0] + two_dim_square[1][0] + two_dim_square[2][0]) == 15 and (two_dim_square[0][1] + two_dim_square[1][1] + two_dim_square[2][1]) == 15  and (two_dim_square[0][2] + two_dim_square[1][2] + two_dim_square[2][2]) == 15 and (two_dim_square[0][0] + two_dim_square[1][1] + two_dim_square[2][2]) == 15 and (two_dim_square[2][0] + two_dim_square[1][1] + two_dim_square[0][2]) == 15:
+#         print("This is a Lo Shu Magic square!")
+#     else:
+#         print("Not a Lo Shu Magic square!")
+
+# main()
+
+#13 Magic 8 ball
+import random
+
+def main():
+    try:
+        response = []
+        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/8_ball.txt", "r") as file:
+            for line in file:
+                response.append(line.strip())
+
+        while True:
+            question = input("Ask a question!(Enter 'exit' to quit): ")
+            if question == "exit":
+                print("Goodbye!")
+                break
+            i = random.randint(0, 11)
+            print(response[i])
+    except FileNotFoundError:
+        print("File not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
 
 main()
