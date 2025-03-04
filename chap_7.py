@@ -206,26 +206,103 @@
 # main()
 
 #13 Magic 8 ball
-import random
+# import random
+
+# def main():
+#     try:
+#         response = []
+#         with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/8_ball.txt", "r") as file:
+#             for line in file:
+#                 response.append(line.strip())
+
+#         while True:
+#             question = input("Ask a question!(Enter 'exit' to quit): ")
+#             if question == "exit":
+#                 print("Goodbye!")
+#                 break
+#             i = random.randint(0, 11)
+#             print(response[i])
+#     except FileNotFoundError:
+#         print("File not found.")
+#     except Exception as e:
+#         print(f"An error occurred: {e}")
+
+
+# main()
+
+# def main():
+#     numbers = [5, 8, 9, 31, 27, 3]
+#     n = 3
+#     multiple_o_n(numbers, n)
+
+# def multiple_o_n(numbers, n):
+#     new_list = []
+#     for i in range(len(numbers)):
+#         if numbers[i] % n == 0:
+#             new_list.append(numbers[i])
+#     print(new_list)
+
+
+# main()
+
+#Lottery
+# import random
+
+# lottery = []
+
+# for i in range(7):
+#     number = random.randint(0, 9)
+#     lottery.append(number)
+
+# print(lottery)
+
+#Sales
+# def main():
+#     week_sales()
+
+# def week_sales():
+#     week = []
+#     day = 1
+#     total = 0
+#     for i in range(7):
+#         sales = float(input(f"Enter the sales for day #{day}: "))
+#         week.append(sales)
+#         day += 1
+#         total += sales
+#     print(week)
+#     print(f"${total:,.2f}")
+# main()
 
 def main():
-    try:
-        response = []
-        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/8_ball.txt", "r") as file:
-            for line in file:
-                response.append(line.strip())
+    rain_stats()
 
-        while True:
-            question = input("Ask a question!(Enter 'exit' to quit): ")
-            if question == "exit":
-                print("Goodbye!")
-                break
-            i = random.randint(0, 11)
-            print(response[i])
-    except FileNotFoundError:
-        print("File not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+def rain_stats():
+    count = 1
+    year = []
+    for i in range(12):
+        rain = float(input(f"Enter the inches of rain on month #{count}: "))
+        year.append(rain)
+        count += 1
+
+    print(year)
+    highest_month = 0
+    lowest_month = 0
+    max_rain = year[0]
+    min_rain = year[0]
+    for i in range(len(year)):
+        if year[i] > max_rain:
+            max_rain = year[i]
+            highest_month = i + 1
+        elif year[i] < min_rain:
+            min_rain = year[i]
+            lowest_month = i + 1
+    
+    print(lowest_month)
+    print(highest_month)
+    print(sum(year))
+    average = sum(year) / len(year)
+    print(f"{average:2f}")
+ 
 
 
 main()
