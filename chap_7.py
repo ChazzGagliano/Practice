@@ -363,29 +363,29 @@
 #                 number = int(line)
 #                 population.append(number)
 
-#         change = []
+#         increase = []
 #         for i in range(1, len(population)):
-#             yearly_increase = population[i] - population[i - 1]
-#             change.append(yearly_increase)
+#             yearly_population = population[i] - population[i - 1]
+#             increase.append(yearly_population)
 
-#         max_change = change[0]
-#         min_change = change[0]
+#         max_increase = increase[0]
+#         min_increase = increase[0]
 #         first_year = 1951
-#         print(change)
-#         years = []
-#         for i in range(len(change)):
-#             if change[i] > max_change:
-#                 max_change = change[i]
+#         total = 0
+#         for i in range(len(increase)):
+#             if increase[i] > max_increase:
+#                 max_increase = increase[i]
 #                 highest_year = first_year + i 
-#             if change[i] < min_change:
-#                 min_change = change[i]
+#             if increase[i] < min_increase:
+#                 min_increase = increase[i]
 #                 lowest_year = first_year + i 
-#         print(change)
-#         print(len(change))
-#         average = sum(change) / len(change)
-#         print(f"{average:.2f}")
-#         print(highest_year)
-#         print(lowest_year)
+#             total += increase[i]
+        
+#         average = total / len(increase)
+
+#         print(f"The average annual change in population during the time period was {average:.2f}.")
+#         print(f"The year with the greatest increase in population during the time period was {highest_year}.")
+#         print(f"The year with the lowest increase in population during the time period was {lowest_year}.")
 
 #     except FileNotFoundError:
 #         print("File Not Found")
@@ -409,27 +409,80 @@
 # main()
 
 #8 Name Search
+# def main():
+#     try:
+#         with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/boynames.txt", "r") as file:
+#             names = []
+#             for line in file:
+#                 line = line.strip()
+#                 names.append(line)
+
+#             name = input("Enter a name: ")
+#             name = name.capitalize()
+#             if name in names:
+#                 print("This was a popular name from the year 2000 to 2009")
+#             else:
+#                 print("This was not a popular name from the year 2000 to 2009")
+
+
+#     except FileNotFoundError:
+#         print("File not found")
+
+
+# main()
+
+# try:
+#     with open('fahrenheit.txt', 'r') as f_file, open('celsius.txt', 'w') as c_file:
+#         try:
+#             for line in f_file:
+#                 number = float(line)
+#                 celc = (number - 32) * (5/9)
+#                 c_file.write(f'{celc:.2f}\n')
+#         except ValueError:
+#             print("Invalid data")
+# except FileNotFoundError:
+#             print("File not found")
+
+# with open("numbers.txt", "r") as file:
+#     negative_count = 0
+#     positive_count = 0
+#     negative_total = 0
+#     positive_total = 0
+#     for number in file:
+#         number = float(number)
+#         if number > 0:
+#             positive_total += number
+#             positive_count += 1
+#         elif number < 0:
+#             negative_total += number
+#             negative_count += 1
+
+# if negative_count == 0:
+#     print("NaN")
+# else:
+#     print(negative_total/negative_count)
+
+# if positive_count == 0:
+#     print("NaN")
+# else:
+#     print(positive_total/positive_count)
+
+#Larger than n
 def main():
-    try:
-        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/boynames.txt", "r") as file:
-            names = []
-            for line in file:
-                line = line.strip()
-                names.append(line)
+    n = int(input("Enter a number: "))
+    numbers = [1, 5, 8, 2, 10, 12, -1]
+    larger_than(n, numbers)
 
-            name = input("Enter a name: ")
-            name = name.capitalize()
-            if name in names:
-                print("This was a popular name from the year 2000 to 2009")
-            else:
-                print("This was not a popular name from the year 2000 to 2009")
+def larger_than(n, numbers):
+    new_list = []
+    for i in range (1, len(numbers)):
+        if numbers[i] > n:
+            new_list.append(numbers[i])
+    if new_list == []:
+        print("There are no numbers in the list greater.")
+    else:
+        print(f"These are numbers greater than {n}: {new_list}")
 
-
-    except FileNotFoundError:
-        print("File not found")
 
 
 main()
-
-
-

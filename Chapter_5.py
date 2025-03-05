@@ -62,3 +62,21 @@
 #     print(f"The property tax for the assessment value of ${assessment_value:,.2f} is ${property_tax:,.2f}.")
 
 # main()
+
+#Autograded
+# import math
+
+# def apothem(side_length, number_of_sides):
+#     return side_length / (2 * math.tan(math.radians(180 / number_of_sides)))
+
+# def area(side_length, number_of_sides):
+#     perimeter = number_of_sides * side_length
+#     apothem_value = apothem(side_length, number_of_sides)
+#     return 0.5 * perimeter * apothem_value
+
+# number_of_sides = int(input("Enter the number of sides: "))
+# side_length = float(input("Enter the side's length: "))
+
+# polygon_area = area(side_length, number_of_sides)
+
+# print(f"{polygon_area:.2f}")
