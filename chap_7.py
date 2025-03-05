@@ -488,19 +488,35 @@
 # main()
 
 #Two Max Numbers
+# def main():
+#     numbers = [1, 5, 12, 8, 27, 32, 15]
+#     max1 = numbers[0]
+#     max2 = numbers[0]
+
+#     for i in range(0, len(numbers)):
+#         if numbers[i] > max1:
+#             max2 = max1
+#             max1 = numbers[i]
+
+#         elif numbers[i] > max2:
+#             max2 = numbers[i]
+#     print(max1)
+#     print(max2)
+
+# main()
+
+
+
 def main():
-    numbers = [1, 5, 12, 8, 27, 32, 15]
-    max1 = numbers[0]
-    max2 = numbers[0]
+    number = 0
+    location = 0
+    array = [6, 7, 8, 9, 10]
 
-    for i in range(0, len(numbers)):
-        if numbers[i] > max1:
-            max2 = max1
-            max1 = numbers[i]
+    for i in range (0, len(array)):
+        array.insert(location, number)
+        number += 1
+        location += 1
+    print(array)
 
-        elif numbers[i] > max2:
-            max2 = numbers[i]
-    print(max1)
-    print(max2)
 
 main()
