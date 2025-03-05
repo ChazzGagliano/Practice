@@ -468,21 +468,39 @@
 #     print(positive_total/positive_count)
 
 #Larger than n
+# def main():
+#     n = int(input("Enter a number: "))
+#     numbers = [1, 5, 8, 2, 10, 12, -1]
+#     larger_than(n, numbers)
+
+# def larger_than(n, numbers):
+#     new_list = []
+#     for i in range (0, len(numbers)):
+#         if numbers[i] > n:
+#             new_list.append(numbers[i])
+#     if new_list == []:
+#         print("There are no numbers in the list greater.")
+#     else:
+#         print(f"These are numbers greater than {n}: {new_list}")
+
+
+
+# main()
+
+#Two Max Numbers
 def main():
-    n = int(input("Enter a number: "))
-    numbers = [1, 5, 8, 2, 10, 12, -1]
-    larger_than(n, numbers)
+    numbers = [1, 5, 12, 8, 27, 32, 15]
+    max1 = numbers[0]
+    max2 = numbers[0]
 
-def larger_than(n, numbers):
-    new_list = []
-    for i in range (1, len(numbers)):
-        if numbers[i] > n:
-            new_list.append(numbers[i])
-    if new_list == []:
-        print("There are no numbers in the list greater.")
-    else:
-        print(f"These are numbers greater than {n}: {new_list}")
+    for i in range(0, len(numbers)):
+        if numbers[i] > max1:
+            max2 = max1
+            max1 = numbers[i]
 
-
+        elif numbers[i] > max2:
+            max2 = numbers[i]
+    print(max1)
+    print(max2)
 
 main()
