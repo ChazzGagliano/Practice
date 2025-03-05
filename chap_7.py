@@ -392,21 +392,44 @@
 # main()
 
 #10 World Series Champions
-def main():
-    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
-        count = 0
-        team = input("Enter a team: ")
-        for line in file:
-            line = line.strip()
-            if team == line:
-                count += 1
+# def main():
+#     with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
+#         count = 0
+#         team = input("Enter a team: ")
+#         for line in file:
+#             line = line.strip()
+#             if team == line:
+#                 count += 1
 
-        if count == 0:
-            print("This team has never won a world series.")
-        else:
-            print(f"This team has won {count} times.")
+#         if count == 0:
+#             print("This team has never won a world series.")
+#         else:
+#             print(f"This team has won {count} times.")
             
+# main()
 
+#8 Name Search
+def main():
+    try:
+        with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/boynames.txt", "r") as file:
+            names = []
+            for line in file:
+                line = line.strip()
+                names.append(line)
+
+            name = input("Enter a name: ")
+            name = name.capitalize()
+            if name in names:
+                print("This was a popular name from the year 2000 to 2009")
+            else:
+                print("This was not a popular name from the year 2000 to 2009")
+
+
+    except FileNotFoundError:
+        print("File not found")
 
 
 main()
+
+
+
