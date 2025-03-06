@@ -392,21 +392,23 @@
 # main()
 
 #10 World Series Champions
-# def main():
-#     with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
-#         count = 0
-#         team = input("Enter a team: ")
-#         for line in file:
-#             line = line.strip()
-#             if team == line:
-#                 count += 1
+def main():
+    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
+        team = input("Enter a team: ")
+        count = 0
+        for line in file:
+            line = line.strip()
+            if team == line:
+                count += 1
 
-#         if count == 0:
-#             print("This team has never won a world series.")
-#         else:
-#             print(f"This team has won {count} times.")
+        if count == 0:
+            print("This team has never won a world series.")
+        elif count == 1:
+            print(f"This team has only won a single world series.")
+        else:
+            print(f"This team has won {count} times.")
             
-# main()
+main()
 
 #8 Name Search
 # def main():
@@ -521,23 +523,23 @@
 
 # main()
 
-def main():
-    array = [1, 5, 50, 7, 27, 13, 40]
-    max1 = array[0]
-    max2 = array[0]
-    highest_number(array, max1, max2)
+# def main():
+#     array = [1, 5, 50, 7, 27, 13, 40]
+#     max1 = array[0]
+#     max2 = array[0]
+#     highest_number(array, max1, max2)
 
 
-def highest_number(array, max1, max2):
-    for i in range(0, len(array)):
-        if array[i] > max2:
-            max1 = max2
-            max2 = array[i]
-        elif array[i] > max1:
-            max1 = array[i]
+# def highest_number(array, max1, max2):
+#     for i in range(0, len(array)):
+#         if array[i] > max2:
+#             max1 = max2
+#             max2 = array[i]
+#         elif array[i] > max1:
+#             max1 = array[i]
 
-    print(max2, max1)
+#     print(max2, max1)
 
 
 
-main()
+# main()
