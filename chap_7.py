@@ -507,16 +507,37 @@
 
 
 
-def main():
-    number = 0
-    location = 0
-    array = [6, 7, 8, 9, 10]
+# def main():
+#     number = 0
+#     location = 0
+#     array = [6, 7, 8, 9, 10]
 
-    for i in range (0, len(array)):
-        array.insert(location, number)
-        number += 1
-        location += 1
-    print(array)
+#     for i in range (0, len(array)):
+#         array.insert(location, number)
+#         number += 1
+#         location += 1
+#     print(array)
+
+
+# main()
+
+def main():
+    array = [1, 5, 50, 7, 27, 13, 40]
+    max1 = array[0]
+    max2 = array[0]
+    highest_number(array, max1, max2)
+
+
+def highest_number(array, max1, max2):
+    for i in range(0, len(array)):
+        if array[i] > max2:
+            max1 = max2
+            max2 = array[i]
+        elif array[i] > max1:
+            max1 = array[i]
+
+    print(max2, max1)
+
 
 
 main()
