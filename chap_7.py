@@ -392,23 +392,23 @@
 # main()
 
 #10 World Series Champions
-def main():
-    with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
-        team = input("Enter a team: ")
-        count = 0
-        for line in file:
-            line = line.strip()
-            if team == line:
-                count += 1
+# def main():
+#     with open("/Users/chazzgagliano/Desktop/CSC106/CSC106Python/worldserieswinners.txt", "r") as file:
+#         team = input("Enter a team: ")
+#         count = 0
+#         for line in file:
+#             line = line.strip()
+#             if team == line:
+#                 count += 1
 
-        if count == 0:
-            print("This team has never won a world series.")
-        elif count == 1:
-            print(f"This team has only won a single world series.")
-        else:
-            print(f"This team has won {count} times.")
+#         if count == 0:
+#             print("This team has never won a world series.")
+#         elif count == 1:
+#             print(f"This team has only won a single world series.")
+#         else:
+#             print(f"This team has won {count} times.")
             
-main()
+# main()
 
 #8 Name Search
 # def main():
@@ -543,3 +543,29 @@ main()
 
 
 # main()
+
+
+
+def main():
+    correct_list = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
+    wrong_questions = []
+    count = 0
+    index = 0
+    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/answers.txt', 'r') as file:
+        for line in file:
+            line = line.strip()
+            if line == correct_list[index]:
+                count += 1
+            else:
+                wrong_questions.append(index + 1)
+            index += 1
+
+
+        if count >= 15:
+            print(f'Congrats! You got {count} out of 20 questions right! You got {len(wrong_questions)} questions wrong, These were the incorrect questions: {wrong_questions}')
+        
+        else:
+            print(f'Sorry you got {count} out of 20 which means you failed. You got {len(wrong_questions)} questions wrong, These are the questions you got wrong: {wrong_questions}')
+        
+
+main()
