@@ -546,26 +546,63 @@
 
 
 
+# def main():
+#     correct_list = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
+#     wrong_questions = []
+#     count = 0
+#     index = 0
+#     with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/answers.txt', 'r') as file:
+#         for line in file:
+#             line = line.strip()
+#             if line == correct_list[index]:
+#                 count += 1
+#             else:
+#                 wrong_questions.append(index + 1)
+#             index += 1
+
+
+#         if count >= 15:
+#             print(f'Congrats! You got {count} out of 20 questions right! You got {len(wrong_questions)} questions wrong, These were the incorrect questions: {wrong_questions}')
+        
+#         else:
+#             print(f'Sorry you got {count} out of 20 which means you failed. You got {len(wrong_questions)} questions wrong, These are the questions you got wrong: {wrong_questions}')
+        
+
+# main()
+
+# def main():
+#     string_input = input("Enter a string")
+#     result = string_function(string_input)
+#     print(result)
+
+# def string_function(string_input):
+#     count = 0
+#     vowels = "aeiou"
+#     for i in range(0, len(string_input)):
+#         if string_input[i] in vowels:
+#             count += 1
+
+#     return count
+
+# main()
+
 def main():
-    correct_list = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
-    wrong_questions = []
-    count = 0
-    index = 0
-    with open('/Users/chazzgagliano/Desktop/CSC106/CSC106Python/answers.txt', 'r') as file:
-        for line in file:
-            line = line.strip()
-            if line == correct_list[index]:
-                count += 1
-            else:
-                wrong_questions.append(index + 1)
-            index += 1
+    string_one = "hello world this is a test hello this"
+    string_two = "hello test"
+    common_word_count(string_one, string_two)
 
+def common_word_count(string_one, string_two):
+    word_one = string_one.split()
+    word_two = string_two.split()
 
-        if count >= 15:
-            print(f'Congrats! You got {count} out of 20 questions right! You got {len(wrong_questions)} questions wrong, These were the incorrect questions: {wrong_questions}')
+    word_count = {}
+
+    for word in word_one:
+        if word in word_two:
+            count_one = word_one.count(word)
+            count_two = word_two.count(word)
+            word_count[word] = count_one + count_two
         
-        else:
-            print(f'Sorry you got {count} out of 20 which means you failed. You got {len(wrong_questions)} questions wrong, These are the questions you got wrong: {wrong_questions}')
-        
+    print(word_count)
 
 main()
