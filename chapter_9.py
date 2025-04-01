@@ -108,82 +108,94 @@
 # main()
 
 #8 Names and Email Addresses
-import pickle
 
-def load_data():
-    try:
-        with open("contacts.pkl", "rb") as file:
-            return pickle.load(file)
-    except FileNotFoundError:
-        print("No existing contact file found. Starting with an empty list.")
-        return {}
+# import pickle
 
-def save_contacts(contacts):
-    with open("contacts.pkl", "wb") as file:
-        pickle.dump(contacts, file)
+# def load_contacts():
+#     try:
+#         with open("contacts.dat", "rb") as file:
+#             return pickle.load(file)
+#     except FileNotFoundError:
+#         print("File not found.")
+#         save_contacts({})
+#         return {}
+
+# def save_contacts(contacts):
+#     with open("contacts.dat", "wb") as file:
+#         pickle.dump(contacts, file)
 
 
-def data_menu():
-    print("Menu:")
-    print("1. Search email address: ")
-    print("2. Create new contact: ")
-    print("3. Update an email address: ")
-    print("4. Delete a contact: ")
-    print("Exit")
+# def menu():
+#     print("\nMenu:")
+#     print("1. Create contact: ")
+#     print("2. Search contact: ")
+#     print("3. Update contact: ")
+#     print("4. Delete contact: ")
+#     print("Enter 'exit' to end session.")
+#     print("--------")
 
-def search_contact(contacts):
-    name = input("Enter a name: ")
-    if name not in contacts:
-        print("Contact doesn't exist.")
-    else:
-        print(f"{name}'s email: {contacts.get(name)}")
+# def create(contacts):
+#     name = input("Enter a name: ")
+#     if name not in contacts:
+#         email = input("Enter a new email: ")
+#         contacts[name] = email
+#     else:
+#         print("This contact already exists.")
 
-def create_contact(contacts):
-    name = input("Enter a name: ")
-    if name not in contacts:
-        email = input("Enter a new email: ")
-        contacts[name] = email
-    else:
-        print("This contact already exists.")
+# def read(contacts):
+#     name = input("Enter a name: ")
+#     if name not in contacts:
+#         print("Contact doesn't exist.")
+#     else:
+#         print(f"{name}'s email: {contacts.get(name)}")
 
-def update_contact(contacts):
-    name = input("Enter a name to update: ")
-    if name not in contacts:
-        print("Contact doesn't exist")
-    else:
-        email = input("Enter the new email: ")
-        contacts[name] = email
-        print("Email updated.")
 
-def delete_contact(contacts):
-    name = input("Enter a name: ")
-    if name not in contacts:
-        print("Contact doesn't exist.")
-    else:
-        del contacts[name]
-        print("Contact deleted")
+# def update(contacts):
+#     name = input("Enter a name to update: ")
+#     if name not in contacts:
+#         print("Contact doesn't exist")
+#     else:
+#         email = input("Enter the new email: ")
+#         contacts[name] = email
+#         print(f"Email updated: {contacts.get(name)}")
+
+# def destroy(contacts):
+#     name = input("Enter a name: ")
+#     if name not in contacts:
+#         print("Contact doesn't exist.")
+#     else:
+#         del contacts[name]
+#         print("Contact destroyed")
     
 
-def main():
-    contacts = load_data()
-    while True:
-        data_menu()
-        option = input("Enter option 1-4(enter exit to leave): ").lower()
-        if option == "exit":
-            save_contacts(contacts)
-            print("Data saved. Bye!")
-            break
-        elif option == "1":
-            search_contact(contacts)
-        elif option == "2":
-            create_contact(contacts)
-        elif option == "3":
-            update_contact(contacts)
-        elif option == "4":
-            delete_contact(contacts)
-        else:
-            print("invalid option.. Try again.")
+# def main():
+#     contacts = load_contacts()
+#     while True:
+#         menu()
+#         option = input("Enter option 1-4(enter exit to leave): ").lower()
+#         if option == "exit":
+#             save_contacts(contacts)
+#             print("Goodbye!")
+#             break
+#         elif option == "1":
+#             create(contacts)
+#         elif option == "2":
+#             read(contacts)
+#         elif option == "3":
+#             update(contacts)
+#         elif option == "4":
+#             destroy(contacts)
+#         else:
+#             print("invalid option.. Try again.")
 
-main()
+# main()
 
 
+array = [1, 2, 3, 4]
+count = len(array) - 1
+new_array = []
+i = 0
+while i <= len(array):
+    new
+
+print(new_array)

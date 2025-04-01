@@ -586,23 +586,39 @@
 
 # main()
 
-def main():
-    string_one = "hello world this is a test hello this"
-    string_two = "hello test"
-    common_word_count(string_one, string_two)
+# def main():
+#     string_one = "hello world this is a test hello this"
+#     string_two = "hello test"
+#     common_word_count(string_one, string_two)
 
-def common_word_count(string_one, string_two):
-    word_one = string_one.split()
-    word_two = string_two.split()
+# def common_word_count(string_one, string_two):
+#     word_one = string_one.split()
+#     word_two = string_two.split()
 
-    word_count = {}
+#     word_count = {}
 
-    for word in word_one:
-        if word in word_two:
-            count_one = word_one.count(word)
-            count_two = word_two.count(word)
-            word_count[word] = count_one + count_two
+#     for word in word_one:
+#         if word in word_two:
+#             count_one = word_one.count(word)
+#             count_two = word_two.count(word)
+#             word_count[word] = count_one + count_two
         
-    print(word_count)
+#     print(word_count)
+
+# main()
+
+def main():
+    string = input("Enter a sentence: ").lower()
+    result = vowel_count(string)
+    print(f"There are {result} vowels in the sentence")
+
+def vowel_count(string):
+    vowels = "aeiou"
+    count = 0
+    for i in string:
+        if i in vowels:
+            count += 1
+
+    return count
 
 main()
