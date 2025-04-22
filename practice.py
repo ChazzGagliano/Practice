@@ -1117,3 +1117,18 @@
 #             print("Invalid data")
 # except FileNotFoundError:
 #             print("File not found")
+
+
+max1 = float('-inf')
+max2 = float('-inf')
+
+array = [5, 20, 21, 3, 42, 21, 27, 43]
+
+for i in range(0, len(array)):
+    if array[i] > max1:
+        max2 = max1
+        max1 = array[i]
+    elif array[i] > max2:
+        max2 = array[i]
+
+print(max1, max2)
