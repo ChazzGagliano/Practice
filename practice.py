@@ -1119,16 +1119,82 @@
 #             print("File not found")
 
 
-max1 = float('-inf')
-max2 = float('-inf')
+# max1 = float('-inf')
+# max2 = float('-inf')
 
-array = [5, 20, 21, 3, 42, 21, 27, 43]
+# array = [5, 20, 21, 3, 42, 21, 27, 43]
 
-for i in range(0, len(array)):
-    if array[i] > max1:
-        max2 = max1
-        max1 = array[i]
-    elif array[i] > max2:
-        max2 = array[i]
+# for i in range(0, len(array)):
+#     if array[i] > max1:
+#         max2 = max1
+#         max1 = array[i]
+#     elif array[i] > max2:
+#         max2 = array[i]
 
-print(max1, max2)
+# print(max1, max2)
+
+# array = [5, 20, 21, 3, 42, 21, 27, 43]
+
+# array_sum = 0
+
+# count = 0
+
+# for i in range(0, len(array)):
+#     array_sum += array[i]
+#     if array[i] % 3 == 0:
+#         count += 1
+    
+# print(array_sum)
+# print(count)
+
+import random
+x = random.randint(1, 10)
+y = random.randint(1, 10)
+
+def math_quiz(x, y):
+    print(f" {x}")
+    print(f"+{y}")
+    total = x + y
+    count = 0
+    while True:
+        answer = int(input("Answer the math equation: "))
+        count += 1
+        if answer != total:
+            print("Try Again")
+            print(f" {x}")
+            print(f"+{y}")
+        else:
+            print("Correct!")
+            print(f"{count} attempts!")
+            break
+
+math_quiz(x, y)
+
+# math_quiz(x, y)
+# import random
+
+# def math_quiz():
+#     x = random.randint(1, 1000)
+#     y = random.randint(1, 1000)
+#     count = 0
+#     while True:
+#         print("Solve the math problem:")
+#         print(f"  {x}")
+#         print(f"+ {y}")
+#         answer = int(input("Solve the problem: "))
+#         count += 1
+#         if answer == x + y:
+#             print(f"Correct! {count} attempts.")
+#             x = random.randint(1, 1000)
+#             y = random.randint(1, 1000)
+#             count = 0
+#             continue
+#         else:
+#             print("Try again!")
+
+# math_quiz()
+
+
+
+
+
