@@ -383,12 +383,12 @@
     // console.log(pair_product([5, 2], [6, 7, 8]))
 
 
-    function array_sum(array) {
-        let sum = 0
-        for (let i = 0; i < array.length; i ++) {
-            sum += array[i]
-        }
-        return sum
-    }
+    // function array_sum(array) {
+    //     let sum = 0
+    //     for (let i = 0; i < array.length; i ++) {
+    //         sum += array[i]
+    //     }
+    //     return sum
+    // }
 
-    console.log(array_sum([1, 2, 3, 4]))
+    // console.log(array_sum([1, 2, 3, 4]))

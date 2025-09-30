@@ -1147,28 +1147,28 @@
 # print(array_sum)
 # print(count)
 
-import random
-x = random.randint(1, 10)
-y = random.randint(1, 10)
+# import random
+# x = random.randint(1, 10)
+# y = random.randint(1, 10)
 
-def math_quiz(x, y):
-    print(f" {x}")
-    print(f"+{y}")
-    total = x + y
-    count = 0
-    while True:
-        answer = int(input("Answer the math equation: "))
-        count += 1
-        if answer != total:
-            print("Try Again")
-            print(f" {x}")
-            print(f"+{y}")
-        else:
-            print("Correct!")
-            print(f"{count} attempts!")
-            break
+# def math_quiz(x, y):
+#     print(f" {x}")
+#     print(f"+{y}")
+#     total = x + y
+#     count = 0
+#     while True:
+#         answer = int(input("Answer the math equation: "))
+#         count += 1
+#         if answer != total:
+#             print("Try Again")
+#             print(f" {x}")
+#             print(f"+{y}")
+#         else:
+#             print("Correct!")
+#             print(f"{count} attempts!")
+#             break
 
-math_quiz(x, y)
+# math_quiz(x, y)
 
 # math_quiz(x, y)
 # import random
@@ -1195,6 +1195,14 @@ math_quiz(x, y)
 # math_quiz()
 
 
+def sum_array():
+    array = [1, 2, 3, 4]
+    sum = 0
+    for i in range(0, len(array)):
+        sum += array[i]
+    return sum
 
+
+print(sum_array())
 
 
