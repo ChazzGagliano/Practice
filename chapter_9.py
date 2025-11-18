@@ -190,11 +190,11 @@
 # main()
 
 
-array = [1, 2, 3, 4]
-count = len(array) - 1
-new_array = []
-i = 0
-while i <= len(array):
-    new
+# array = [1, 2, 3, 4]
+# count = len(array) - 1
+# new_array = []
+# i = 0
+# while i <= len(array):
+#     new
 
-print(new_array)
+# print(new_array)

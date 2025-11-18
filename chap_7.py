@@ -607,18 +607,18 @@
 
 # main()
 
-def main():
-    string = input("Enter a sentence: ").lower()
-    result = vowel_count(string)
-    print(f"There are {result} vowels in the sentence")
+# def main():
+#     string = input("Enter a sentence: ").lower()
+#     result = vowel_count(string)
+#     print(f"There are {result} vowels in the sentence")
 
-def vowel_count(string):
-    vowels = "aeiou"
-    count = 0
-    for i in string:
-        if i in vowels:
-            count += 1
+# def vowel_count(string):
+#     vowels = "aeiou"
+#     count = 0
+#     for i in string:
+#         if i in vowels:
+#             count += 1
 
-    return count
+#     return count
 
-main()
+# main()

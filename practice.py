@@ -1195,6 +1195,16 @@
 # math_quiz()
 
 
+# def sum_array():
+#     array = [1, 2, 3, 4]
+#     sum = 0
+#     for i in range(0, len(array)):
+#         sum += array[i]
+#     return sum
+
+
+# print(sum_array())
+
 def sum_array():
     array = [1, 2, 3, 4]
     sum = 0
@@ -1202,7 +1212,5 @@ def sum_array():
         sum += array[i]
     return sum
 
-
 print(sum_array())
-
 
