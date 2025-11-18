@@ -393,12 +393,14 @@
 
     // console.log(array_sum([1, 2, 3, 4]))
 
-function sum_array(array) {
-    let sum = 0
-        for (let i = 0; i < array.length; i ++){
-            sum += array[i]
+    function c_count(array) {
+        let count = 0
+        for (let i = 0; i < array.length; i ++) {
+            if (array[i].startsWith("c")) {
+                count += 1
+            }
         }
-    return sum
-}
+        return count
+    }
 
-console.log(sum_array([1, 2, 3, 4]))
+    console.log(c_count(["apple", "cat", "canana"]))
