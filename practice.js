@@ -407,10 +407,8 @@
 
 function times_two(array) {
     let new_array = []
-    for (i = 0; i < array.length; i ++) {
-        let number = 0
-        number = array[i] * 2 
-        new_array.push(number)
+    for (i = 0; i < array.length; i ++) { 
+        new_array.push(array[i] * 2)
     }
     return new_array
 }
