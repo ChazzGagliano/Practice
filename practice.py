@@ -1214,14 +1214,15 @@
 
 # print(sum_array())
 
-def starts_withC():
-    array = ["apple", "cat", "canana"]
-    count = 0
-    for i in range(0, len(array)):
-        array[i] = array[i].lower()
-        if array[i][0] == "c":
-            count += 1
+# def starts_withC():
+#     array = ["apple", "cat", "canana"]
+#     count = 0
+#     for i in range(0, len(array)):
+#         array[i] = array[i].lower()
+#         if array[i][0] == "c": 
+#             count += 1
 
-    return count
+#     return count
 
-print(starts_withC())
+# print(starts_withC())
+

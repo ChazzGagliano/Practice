@@ -404,3 +404,15 @@
     // }
 
     // console.log(c_count(["apple", "cat", "canana"]))
+
+function times_two(array) {
+    let new_array = []
+    for (i = 0; i < array.length; i ++) {
+        let number = 0
+        number = array[i] * 2 
+        new_array.push(number)
+    }
+    return new_array
+}
+
+console.log(times_two([1, 2, 3, 4]))
