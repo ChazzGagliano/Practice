@@ -1226,11 +1226,29 @@
 
 # print(starts_withC())
 
-def times_two():
-    array = [1, 2, 3, 4]
-    new_array = []
-    for i in range(0, len(array)):
-        new_array.append(array[i] * 2)
-    return new_array
+# def times_two():
+#     array = [1, 2, 3, 4]
+#     new_array = []
+#     for i in range(0, len(array)):
+#         new_array.append(array[i] * 2)
+#     return new_array
 
-print(times_two())
+# print(times_two())
+
+# def four_array(array):
+#     if 4 in array:
+#         return "Access Denied"
+#     else:
+#         return "Access Granted"
+
+# array =[1, 2, 3, 4]
+# print(four_array(array))
+
+def sum_array():
+    sum = 1
+    for i in range(0, len(array)):
+        sum += array[i]
+    return sum
+
+array = [1, 2, 3, 4]
+print(sum_array())
