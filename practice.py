@@ -1235,6 +1235,7 @@
 
 # print(times_two())
 
+<<<<<<< HEAD
 def sum_array():
     array = [1, 2, 3, 4]
     count = 0
@@ -1243,4 +1244,22 @@ def sum_array():
 
     return count 
 
+=======
+# def four_array(array):
+#     if 4 in array:
+#         return "Access Denied"
+#     else:
+#         return "Access Granted"
+
+# array =[1, 2, 3, 4]
+# print(four_array(array))
+
+def sum_array():
+    sum = 1
+    for i in range(0, len(array)):
+        sum += array[i]
+    return sum
+
+array = [1, 2, 3, 4]
+>>>>>>> e2f20539b9b20eeef8a9afa00efdd36ddc75c104
 print(sum_array())
