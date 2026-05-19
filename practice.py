@@ -1226,11 +1226,21 @@
 
 # print(starts_withC())
 
-def times_two():
-    array = [1, 2, 3, 4]
-    new_array = []
-    for i in range(0, len(array)):
-        new_array.append(array[i] * 2)
-    return new_array
+# def times_two():
+#     array = [1, 2, 3, 4]
+#     new_array = []
+#     for i in range(0, len(array)):
+#         new_array.append(array[i] * 2)
+#     return new_array
 
-print(times_two())
+# print(times_two())
+
+def sum_array():
+    array = [1, 2, 3, 4]
+    count = 0
+    for i in range(0, len(array)):
+        count += array[i]
+
+    return count 
+
+print(sum_array())
