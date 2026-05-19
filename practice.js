@@ -414,3 +414,13 @@
 // }
 
 // console.log(times_two([1, 2, 3, 4]))
+
+function sum_array(array) {
+    let count = 0
+    for (i= 0; i < array.length; i ++) {
+        count += array[i]
+    }
+    return count
+}
+
+console.log(sum_array([1, 2, 3, 4]))
